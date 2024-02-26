@@ -1,0 +1,4723 @@
+<!DOCTYPE html>
+<html>
+<link href="../hoja.css" rel="stylesheet" type="text/css" />
+
+<head>
+  <meta charset=utf-8 />
+  <title>Diccionario de datos - Informacion Gerencial</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="navbar">
+      <a href="../index.html"> <img src="../images/logo2.png" /></a>
+      <h2>DICCIONARIO DE DATOS - SUITE IG</h2>
+    </div>
+
+    <div class="contenido">
+      <div class="breadcrumb">
+        <a href="menu.html"><img src="../images/icon/volver.png" alt=""></a> |
+        <p>OPCIONES</p><img src="../images/icon/mayor.png" alt="" width="10">
+        <p>CAMPOS</p>
+        <h3>IGWEB</h3>
+      </div>
+      <div class="data">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th>TABLA</th>
+              <th>POS.</th>
+              <th>#</th>
+              <th>COLUMNA</th>
+              <th>TIPO DATO</th>
+              <th>LONG.</th>
+              <th>DESCRIPCION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> ACCION </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la acción </td>
+            </tr>
+            <tr>
+              <td> ACCION </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Descripción de la acción </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Descripción de la acción - para informes </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> IDTAREA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del desencadenante que permite automatizar la tarea </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> PRERREQUISITOS </td>
+              <td> VARCHAR2 </td>
+              <td> 20 </td>
+              <td> Consecutivo de las acciones prerrequisito </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> TIPO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tipo de acción - GLOSA (Clasificación 2) </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> CADENABASE </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Cadena base de la acción a ejecutar </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> CONTENIDO </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Contenido adicional de la acción a ejecutar </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 8 </td>
+              <td> FK </td>
+              <td> IDCATEGORIA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la categoría de la acción </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 9 </td>
+              <td> FK </td>
+              <td> IDGRUPOPT </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al grupo de proceso </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> CONTENIDO2 </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Segundo contenido en la acción de la tarea </td>
+            </tr>
+            <tr>
+              <td> ACCIONT </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> CONSECUTIVO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> ACCPARAMETRO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> ACCPARAMETRO </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDACCIONT </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la acción que utilizará el parámetro </td>
+            </tr>
+            <tr>
+              <td> ACCPARAMETRO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Nombre del parámetro </td>
+            </tr>
+            <tr>
+              <td> ACCPARAMETRO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> CONSECUTIVO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo con que se enviara el parámetro al ejecutar la acción </td>
+            </tr>
+            <tr>
+              <td> ACCPARAMETRO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> TIPO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tipo de parámetro - Listado en Glosa (3) </td>
+            </tr>
+            <tr>
+              <td> ACCPARAMETRO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> VALOR </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Valor del parámetro y/o datos necesarios para obtenerlo </td>
+            </tr>
+            <tr>
+              <td> ACCPARAMETRO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> KEYCONCURRENCIA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Indicador de llave de concurrencia </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo Autogenerado </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> ACTIVA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado de la aplicación 1- Activo 0- Inactivo </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> ICONO </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Icono de la aplicación </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre de la aplicación </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> OUTCOME </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Interno: navegación JSF </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> PERSTISTENUNIT </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Interno: futura implementación </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> URL </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Interno: futura implementación </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> NOM_INTERNO </td>
+              <td> VARCHAR2 </td>
+              <td> 200 </td>
+              <td> Nombre interno de la aplicación </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 2000 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> VERSION </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Versión de la aplicación </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> VERSION_DESPLIEGUE </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Versión de la aplicación a desplegar </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> MASIVO_TRANSACCIONAL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> APLICACION </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> IG_FORMATO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE_CARGUE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre del archivo original cargado. </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> NOMBRE_SISTEMA </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre final del archivo en el servidor </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> MIMETYPE </td>
+              <td> VARCHAR2 </td>
+              <td> 500 </td>
+              <td> Define el tipo de archivo cargado </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> FECHA_CARGUE </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de cargue del archivo al sistema </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> FECHA_MODIFICACION </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de modificación del archivo </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> PATCH </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Ruta física en donde quedo el archivo cargado </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> HASH_DIGEST </td>
+              <td> VARCHAR2 </td>
+              <td> 500 </td>
+              <td> SHA del contenido del archivo para controlar la autenticación del archivo </td>
+            </tr>
+            <tr>
+              <td> ARCHIVO </td>
+              <td> 9 </td>
+              <td> FK </td>
+              <td> ARCHIVO_ANTERIOR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> FK del archivo anterior si este ha sido modificado </td>
+            </tr>
+            <tr>
+              <td> AREA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del área - Llave primaria </td>
+            </tr>
+            <tr>
+              <td> AREA </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Descripción del área existente en la empresa </td>
+            </tr>
+            <tr>
+              <td> AREACONF </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> AREACONF </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDCHAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia Con el CHAR principal. </td>
+            </tr>
+            <tr>
+              <td> AREACONF </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> NOMBRESERIE </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna donde se agruparán los datos. </td>
+            </tr>
+            <tr>
+              <td> AREACONF </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBREVARIABLE </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna de los valores a comparar de cada serie. </td>
+            </tr>
+            <tr>
+              <td> AREACONF </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> NOMBREDATO </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna donde obtenemos el valor numérico a comparar de la columna variable. </td>
+            </tr>
+            <tr>
+              <td> AREACONF </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> NOMBREEJEX </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> AREACONF </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> NOMBREEJEY </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> BARCONF </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> BARCONF </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDCHAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia con el CHAR principal. </td>
+            </tr>
+            <tr>
+              <td> BARCONF </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> NOMBRESERIE </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna de donde se agruparán los datos. </td>
+            </tr>
+            <tr>
+              <td> BARCONF </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBREVARIABLE </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna donde se tomarán los nombres de las variables a comparar. </td>
+            </tr>
+            <tr>
+              <td> BARCONF </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> NOMBREVALOR </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna donde se tomarán los valores numéricos de las variables. </td>
+            </tr>
+            <tr>
+              <td> BARCONF </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> HORIZONTAL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Indica si se quiere que el grafico se pinte de forma horizontal. </td>
+            </tr>
+            <tr>
+              <td> CARGO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia con el CHAR principal. </td>
+            </tr>
+            <tr>
+              <td> CARGO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Descripción del cargo existente en la empresa </td>
+            </tr>
+            <tr>
+              <td> CATEGORIA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> CATEGORIA </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Descripción de la categoría </td>
+            </tr>
+            <tr>
+              <td> CATEGORIA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> SEMAFORO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Swiche indicador del uso de control a través del semáforo </td>
+            </tr>
+            <tr>
+              <td> CATEGORIA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> REINTENTO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Swiche indicador de la posibilidad de reintento en fallos </td>
+            </tr>
+            <tr>
+              <td> CATEGORIA </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> WEBSERVICE </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CHAR_CONSULTA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> CHAR_CONSULTA </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDCHAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al CHAR principal. </td>
+            </tr>
+            <tr>
+              <td> CHAR_CONSULTA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> DATASOURCE </td>
+              <td> VARCHAR2 </td>
+              <td> 512 </td>
+              <td> Nombre del DATASOURCE de la conexión </td>
+            </tr>
+            <tr>
+              <td> CHAR_CONSULTA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> QUERY </td>
+              <td> CLOB </td>
+              <td> 4000 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CHARS </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> CHARS </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> TIPO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tipo de gráfico, siendo 1 para grafico de barras, 2 para un gráfico lineal, 3 para un gráfico de
+                pastel y 4 para un gráfico tabulado. </td>
+            </tr>
+            <tr>
+              <td> CHARS </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> TIEMPOACTUALIZACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tiempo en minutos con el cual se actualizará el grafico. </td>
+            </tr>
+            <tr>
+              <td> CHARS </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Nombre del gráfico. </td>
+            </tr>
+            <tr>
+              <td> CHARS </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> ACTIVO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Determina si el grafico está activo o desactivado. </td>
+            </tr>
+            <tr>
+              <td> CHARS </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> TAMANO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CHARS </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> MOSTRARTITULO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Determina si se quiere mostrar el nombre del grafico como un título. </td>
+            </tr>
+            <tr>
+              <td> CHARS </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> GRUPOCOLOR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CONCURRENCIA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria - calculada por el TRIGGER </td>
+            </tr>
+            <tr>
+              <td> CONCURRENCIA </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> ORIGEN </td>
+              <td> VARCHAR2 </td>
+              <td> 2 </td>
+              <td> Origen de la marca de concurrencia </td>
+            </tr>
+            <tr>
+              <td> CONCURRENCIA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> LLAVE </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Texto llave único de concurrencia </td>
+            </tr>
+            <tr>
+              <td> CONCURRENCIA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> FECHAHORA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Hora en la cual se registra la bandera </td>
+            </tr>
+            <tr>
+              <td> CONCURRENCIA </td>
+              <td> 5 </td>
+              <td> FK </td>
+              <td> IDCATEGORIA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la categoría </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo Autogenerado </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Nombre de la conexión </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> SERVICIO </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre para buscar conexiones por DATASOURDE </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> DRIVER </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Driver JDBC soportados por el JAR especifico </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> URL </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> URL de conexión a la base de datos </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> USUARIO </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Usuario valido de conexión </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> PASSWORD </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Clave de acceso </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave de la tabla </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Nombre de la configuración </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> PROTOCOLO </td>
+              <td> VARCHAR2 </td>
+              <td> 10 </td>
+              <td> Tipo de protocolo </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> SERVIDOR </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> IP o nombre del servidor FTP </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> PUERTO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Puerto de escucha del servidor TP </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> USUARIO </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Login de acceso al FTP </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> CLAVE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Clave de acceso al FTP </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> HUELLARSA_SFTP </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Huella si aplica </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> LONGKEYRSA_SFTP </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Login RSA si aplica </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> CLAVE_SFTP </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Clave RSA si aplica </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> RUTA_DESCARGA </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CONEXIONES_FTP </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> BACKUPARCHIVO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CONSULTASQL </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> CONSULTASQL </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre de la consulta SQL </td>
+            </tr>
+            <tr>
+              <td> CONSULTASQL </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> IDAPLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Id de la aplicación </td>
+            </tr>
+            <tr>
+              <td> CONSULTASQL </td>
+              <td> 4 </td>
+              <td> FK </td>
+              <td> IDCONEXION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Id de la conexión </td>
+            </tr>
+            <tr>
+              <td> CONSULTASQL </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> CONSULTA </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Consulta SQL </td>
+            </tr>
+            <tr>
+              <td> DASHBOARD </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> DASHBOARD </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre del DASHBOARD, este solo se usa para identificarlo de otros. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARD </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> NUMEROCOLUMNAS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Numero de columnas que tendrá el DASHBOAR. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARD </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NUMEROFILAS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Numero de filas que tiene el DASHBOARD </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDCHAR </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDCHAR </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDDASHBOARD </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al DASHBOARD </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDCHAR </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> IDCHAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al gráfico. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDCHAR </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> POSICION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Posición del grafico en el DASHBOARD, esta posición es el numero de la celda en la cual debe
+                dibujarse el grafico. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDCHAR </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> DIMENCIONX </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Indica el número de celdas en el eje x que ocupa el grafico, funciona como un COLSPAN. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDCHAR </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> DIMENCIONY </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Indica el número de celdas en el eje Y que ocupa el grafico, funciona como un ROWSPAN. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDPERFIL </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> IDPERFIL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al perfil el cual se le asigna un DASHBOARD. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDPERFIL </td>
+              <td> 1 </td>
+              <td> FK </td>
+              <td> IDPERFIL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al perfil el cual se le asigna un DASHBOARD. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDPERFIL </td>
+              <td> 2 </td>
+              <td> PK </td>
+              <td> IDDASHBOARD </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al DASHBOAD a asignar al perfil. </td>
+            </tr>
+            <tr>
+              <td> DASHBOARDPERFIL </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDDASHBOARD </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al DASHBOAD a asignar al perfil. </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 150 </td>
+              <td> Descripción de la configuración desencadenante </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> PERIODICIDAD </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Periodicidad (P) con que se ejecutará la tarea </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> FECHAINICIO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha en la cual inicia la ejecución </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> HORAINICIO </td>
+              <td> VARCHAR2 </td>
+              <td> 5 </td>
+              <td> Hora en la cual inicia la ejecución </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> REPETIR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Repetir cada # cantidad de - dias(P2) semanas(P3) </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> DIA1 </td>
+              <td> VARCHAR2 </td>
+              <td> 12 </td>
+              <td> Cadena binaria que representa la ocurrencia - Dias semana(P3) Meses año (P4) </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> ESPECIFICA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Funcionalidad para la P4(mensualmente) – Que especificará </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> DIA2 </td>
+              <td> VARCHAR2 </td>
+              <td> 32 </td>
+              <td> Funcionalidad para la P4(mensualmente) - Cadena binaria </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> FESTIVOS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Indicador si se ejecuta en días festivos </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> REINTENTOS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Cantidad de veces que reintenta ejecutar la tarea </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> MINUTOSR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> En caso de reintentos, luego de # minutos reintenta </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> FECHAEXPIRA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha en la cual expira el desencadenante </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 14 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado actual del desencadenante </td>
+            </tr>
+            <tr>
+              <td> DESENCADENANTE </td>
+              <td> 15 </td>
+              <td> (null) </td>
+              <td> FECHAVALIDACION </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Ultima fecha en la que se calcularon las fechas de ejecución de una tarea </td>
+            </tr>
+            <tr>
+              <td> DESFECHA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> DESFECHA </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDDESENCADENA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del desencadenante al cual pertenece la fecha </td>
+            </tr>
+            <tr>
+              <td> DESFECHA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> FECHAHORA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha hora en la cual se cumple el desencadenante </td>
+            </tr>
+            <tr>
+              <td> FAVORITO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> FAVORITO </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDUSUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Usuario que aplica la opción favorita </td>
+            </tr>
+            <tr>
+              <td> FAVORITO </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> IDOPCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Opción que aplica como favorito </td>
+            </tr>
+            <tr>
+              <td> FESTIVO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de los festivos - Llave primaria </td>
+            </tr>
+            <tr>
+              <td> FESTIVO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> FECHA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha que se considera festiva </td>
+            </tr>
+            <tr>
+              <td> GLOSA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> CODIGO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código único en cada clasificación </td>
+            </tr>
+            <tr>
+              <td> GLOSA </td>
+              <td> 2 </td>
+              <td> PK </td>
+              <td> CLASIFICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Número de clasificación </td>
+            </tr>
+            <tr>
+              <td> GLOSA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> GLOSA </td>
+              <td> VARCHAR2 </td>
+              <td> 150 </td>
+              <td> Texto que verá el usuario en el FRONT </td>
+            </tr>
+            <tr>
+              <td> GPG </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> GPG </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Nombre del archivo encriptado </td>
+            </tr>
+            <tr>
+              <td> GPG </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> TIPO </td>
+              <td> VARCHAR2 </td>
+              <td> 10 </td>
+              <td> Tipo de encriptación </td>
+            </tr>
+            <tr>
+              <td> GPG </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> CLAVE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Clave de la encriptación </td>
+            </tr>
+            <tr>
+              <td> GPG </td>
+              <td> 5 </td>
+              <td> FK </td>
+              <td> ID_LLAVE_PRIVADA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID de la llave privada de la encriptación GPG </td>
+            </tr>
+            <tr>
+              <td> GRUGLOSA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> LLave primaria </td>
+            </tr>
+            <tr>
+              <td> GRUGLOSA </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDGRUPOP </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del grupo de proceso </td>
+            </tr>
+            <tr>
+              <td> GRUGLOSA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> IDGLOSA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la glosa que se asocia al grupo de proceso Clasificación (4) </td>
+            </tr>
+            <tr>
+              <td> GRUPO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo autogenerado </td>
+            </tr>
+            <tr>
+              <td> GRUPO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> CLOB </td>
+              <td> 4000 </td>
+              <td> Nombre del grupo de opciones </td>
+            </tr>
+            <tr>
+              <td> GRUPO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> ICONO </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Define el icono a mostrar en la aplicación para el grupo </td>
+            </tr>
+            <tr>
+              <td> GRUPO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre a mostrar en la aplicación </td>
+            </tr>
+            <tr>
+              <td> GRUPO </td>
+              <td> 5 </td>
+              <td> FK </td>
+              <td> ID_APLIACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> GRUPO </td>
+              <td> 6 </td>
+              <td> FK </td>
+              <td> ID_MENU </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Menú al que pertenece </td>
+            </tr>
+            <tr>
+              <td> GRUPO_OPCION </td>
+              <td> 1 </td>
+              <td> FK </td>
+              <td> ID_GRUPO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Grupo relacionado </td>
+            </tr>
+            <tr>
+              <td> GRUPO_OPCION </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_OPCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Opción asociada a un grupo </td>
+            </tr>
+            <tr>
+              <td> GRUPOP </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> GRUPOP </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Descripción del grupo de proceso </td>
+            </tr>
+            <tr>
+              <td> GRUPOP </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado del grupo de proceso </td>
+            </tr>
+            <tr>
+              <td> GRUPOPT </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> GRUPOPT </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Descripción del grupo </td>
+            </tr>
+            <tr>
+              <td> GRUPOPT </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> CODDESTINO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del destino de las alertas </td>
+            </tr>
+            <tr>
+              <td> GRUPOPT </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado actual del grupo </td>
+            </tr>
+            <tr>
+              <td> IMAGENES_SLIDER </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo autogenerado </td>
+            </tr>
+            <tr>
+              <td> IMAGENES_SLIDER </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> ARCHIVO </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Imagen de la visualización de la aplicación </td>
+            </tr>
+            <tr>
+              <td> IMAGENES_SLIDER </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> CLOB </td>
+              <td> 4000 </td>
+              <td> Descripción de la imagen </td>
+            </tr>
+            <tr>
+              <td> IMAGENES_SLIDER </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre de la imagen </td>
+            </tr>
+            <tr>
+              <td> IMAGENES_SLIDER </td>
+              <td> 5 </td>
+              <td> FK </td>
+              <td> ID_APLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Número de aplicación </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_APLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia a la aplicación a la que aplica la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> FECHA_GENERACION </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha en la que se genera la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> FECHA_INSTALACION </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha en la que se instaló la licencia en el sistema </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> FECHA_VIGENCIA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de vigencia de la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> USUARIO_GENERACION </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Usuario que generó la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> USUARIO_INSTALACION </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Usuario que realiza la instalación de la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Estado de la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> SEC_PERIODO </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Campo seguro donde se guarda el periodo actual de la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> LICENCIA </td>
+              <td> CLOB </td>
+              <td> 4000 </td>
+              <td> Contenido encriptado del XML de la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_OPCION </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_OPCION </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_LICENCIA_PERFIL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al perfil de la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_OPCION </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> OPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> OUTCOME de la opción a la que hace referencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_OPCION </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> SEC_OPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Campo seguro del OUTCOME </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_PERFIL </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_PERFIL </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_LICENCIA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia a la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_PERFIL </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> FERFIL </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Tipo de perfil </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_PERFIL </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> CANTIDAD </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Cantidad de licencias para el perfil </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_PERFIL </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> USADAS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Cantidad de licencias usadas </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_PERFIL </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> SEC_PERFIL </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Campo seguro del tipo de perfil </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_PERFIL </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> SEC_CANTIDAD </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Campo seguro de la cantidad del perfil </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_PERFIL </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> SEC_USADAS </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Campo seguro de las licencias usadas </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_USUARIO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_USUARIO </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_LICENCIA_PERFIL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al perfil de la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_USUARIO </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> ID_USUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia del usuario que usa el perfil </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_USUARIO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> FECHA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha en la que el usuario consumió la licencia </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_USUARIO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> FECHA_ULTIMO_INGRESO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha del último ingreso del usuario a la aplicación </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_USUARIO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> SEC_ID_LICENCIA_PERFIL </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Campo seguro del id del perfil </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_USUARIO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> SEC_ID_USUARIO </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Campo seguro del id del usuario </td>
+            </tr>
+            <tr>
+              <td> LICENCIA_USUARIO </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> SEC_FECHA </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Campo seguro de la fecha en la que ingresa el usuario </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> FECHASISTEMA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha del sistema </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> FECHAHORA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha del servidor </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> IDACCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> IP </td>
+              <td> VARCHAR2 </td>
+              <td> 15 </td>
+              <td> Dirección IP desde la cual se realiza la acción </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> MAQUINA </td>
+              <td> VARCHAR2 </td>
+              <td> 60 </td>
+              <td> Nombre de la máquina desde la cual se realiza la acción </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> IDAPLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la aplicación </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> IDUSUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del usuario </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> IDPERFIL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del perfil que posee el usuario </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> IDOPCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la opción en que se encontraba </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> RESULTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Resultado de la acción que realizó </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> VALORACTUAL </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nuevo valor guardado </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> VALORANTERIOR </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Valor anterior antes de guardar </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 14 </td>
+              <td> (null) </td>
+              <td> TABLA </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> La tabla en cuestión </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 15 </td>
+              <td> (null) </td>
+              <td> CAMPO </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Columna donde se hace el cambio </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 16 </td>
+              <td> (null) </td>
+              <td> MENSAJE </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 17 </td>
+              <td> (null) </td>
+              <td> MENSAJE1 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 18 </td>
+              <td> (null) </td>
+              <td> MENSAJE2 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 19 </td>
+              <td> (null) </td>
+              <td> MENSAJE3 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 20 </td>
+              <td> (null) </td>
+              <td> MENSAJE4 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 21 </td>
+              <td> (null) </td>
+              <td> MENSAJE5 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 22 </td>
+              <td> (null) </td>
+              <td> MENSAJE6 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 23 </td>
+              <td> (null) </td>
+              <td> MENSAJE7 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 24 </td>
+              <td> (null) </td>
+              <td> MENSAJE8 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 25 </td>
+              <td> (null) </td>
+              <td> MENSAJE9 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOG </td>
+              <td> 26 </td>
+              <td> (null) </td>
+              <td> MENSAJE10 </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Mensaje adicional LOG </td>
+            </tr>
+            <tr>
+              <td> LOGIN </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> LOGIN </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDUSUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Id del usuario </td>
+            </tr>
+            <tr>
+              <td> LOGIN </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> IP </td>
+              <td> VARCHAR2 </td>
+              <td> 15 </td>
+              <td> IP de la máquina del usuario que inicia sesión </td>
+            </tr>
+            <tr>
+              <td> LOGIN </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> MAQUINA </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Nombre de la máquina que inicia sesión </td>
+            </tr>
+            <tr>
+              <td> LOGIN </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> FECHAHORA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de inicio de sesión </td>
+            </tr>
+            <tr>
+              <td> LOGIN </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> APP </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de la aplicación </td>
+            </tr>
+            <tr>
+              <td> MENU </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo autogenerado </td>
+            </tr>
+            <tr>
+              <td> MENU </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre del menú </td>
+            </tr>
+            <tr>
+              <td> MENU </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> ID_APLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Número de aplicación </td>
+            </tr>
+            <tr>
+              <td> MENU </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> ORDEN </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Orden de despliegue en el menú </td>
+            </tr>
+            <tr>
+              <td> MENU </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 2000 </td>
+              <td> Descripción del menú </td>
+            </tr>
+            <tr>
+              <td> MENU_OPCION </td>
+              <td> 1 </td>
+              <td> FK </td>
+              <td> ID_MENU </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo de menú </td>
+            </tr>
+            <tr>
+              <td> MENU_OPCION </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_OPCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo de la opción </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> ACCION </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Acción de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> CLASS_IMPL </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> CLASS_IMPL de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> FECHA_INICIO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> FECHA_INICIO de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> FECHA_FIN </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> FECHA_FIN de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> ESTADO de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> REGISTROS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> REGISTROS de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> COLA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> COLA de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> FECHA_LIMITE </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> FECHA_LIMITE de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> PROGRESO_MAX </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> PROGRESO_MAX de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> PROGRESO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> PROGRESO de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> PROGRESO_MSG </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> PROGRESO_MSG de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> MENSAJE_RETORNO </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> MENSAJE_RETORNO de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 14 </td>
+              <td> (null) </td>
+              <td> ID_USUARIO_EJECUTA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_USUARIO_EJECUTA de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 15 </td>
+              <td> (null) </td>
+              <td> ID_USUARIO_CANCELA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_USUARIO_CANCELA de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 16 </td>
+              <td> FK </td>
+              <td> ID_APLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_APLICACION de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 17 </td>
+              <td> FK </td>
+              <td> ID_OPCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_OPCION de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 18 </td>
+              <td> (null) </td>
+              <td> IP_EJECUCION </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> IP_EJECUCION de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 19 </td>
+              <td> FK </td>
+              <td> ID_UN </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_UN de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 20 </td>
+              <td> (null) </td>
+              <td> ID_ENTITY </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_ENTITY de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 21 </td>
+              <td> (null) </td>
+              <td> ID_PERFIL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_PERFIL de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 22 </td>
+              <td> (null) </td>
+              <td> ID_PROCESO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_PROCESO de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 23 </td>
+              <td> (null) </td>
+              <td> ID_SUB_PROCESO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_SUB_PROCESO de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 24 </td>
+              <td> (null) </td>
+              <td> PARAMETROS </td>
+              <td> CLOB </td>
+              <td> 4000 </td>
+              <td> PARAMETROS de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 25 </td>
+              <td> (null) </td>
+              <td> USUARIO </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> USUARIO de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 26 </td>
+              <td> (null) </td>
+              <td> EVENTO </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> EVENTO de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 27 </td>
+              <td> (null) </td>
+              <td> ID_PROCESO_OS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_PROCESO_OS de los microprocesos ejecutados </td>
+            </tr>
+            <tr>
+              <td> MICROPROCESO </td>
+              <td> 28 </td>
+              <td> (null) </td>
+              <td> ID_LOGIN </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> MSGSUBPROCESO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> LLave primaria </td>
+            </tr>
+            <tr>
+              <td> MSGSUBPROCESO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> PROCESADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> MSGSUBPROCESO </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> IDPROCESO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del proceso que originó el subproceso - para seguimiento (si lo hay) </td>
+            </tr>
+            <tr>
+              <td> MSGSUBPROCESO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> IDSUBPROCESO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del subproceso - enviado desde el programador (si lo hay) </td>
+            </tr>
+            <tr>
+              <td> MSGSUBPROCESO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> TIPOMSG </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tipo de mensaje que se desea reportar </td>
+            </tr>
+            <tr>
+              <td> MSGSUBPROCESO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> FECHAHORA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Hora en la cual se registra el mensaje </td>
+            </tr>
+            <tr>
+              <td> MSGSUBPROCESO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> LLAVE </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Valor llave para búsquedas eficientes desde la App o en el Log </td>
+            </tr>
+            <tr>
+              <td> MSGSUBPROCESO </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> MENSAJE </td>
+              <td> CLOB </td>
+              <td> 4000 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo autogenerado </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> CLOB </td>
+              <td> 4000 </td>
+              <td> Descripción de la opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> FAVORITO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Define si la opción debe mostrarse en favoritos </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre de la opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> OUTCOME </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Interno: usado por la aplicación para navegar </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 6 </td>
+              <td> FK </td>
+              <td> ID_APLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la aplicación </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> ORDEN </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Orden de la aplicación </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado de la operación </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> CODOPERACIO </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Código de la operación </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> PROCESO1 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> PROCESO2 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> PROCESO3 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> PROCESO4 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 14 </td>
+              <td> (null) </td>
+              <td> PROCESO5 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 15 </td>
+              <td> (null) </td>
+              <td> PROCESO6 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 16 </td>
+              <td> (null) </td>
+              <td> PROCESO7 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 17 </td>
+              <td> (null) </td>
+              <td> TRAZA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identifica si el sistema debe generar Log para esta opción </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 18 </td>
+              <td> (null) </td>
+              <td> PROCESO8 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 8 </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 19 </td>
+              <td> (null) </td>
+              <td> PROCESO9 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 9 </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 20 </td>
+              <td> (null) </td>
+              <td> PROCESO10 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 10 </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 21 </td>
+              <td> (null) </td>
+              <td> PROCESO11 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 11 </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 22 </td>
+              <td> (null) </td>
+              <td> PROCESO12 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 12 </td>
+            </tr>
+            <tr>
+              <td> OPCION </td>
+              <td> 23 </td>
+              <td> (null) </td>
+              <td> PROCESO13 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 13 </td>
+            </tr>
+            <tr>
+              <td> OPCION_CONSULTA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo autogenerado </td>
+            </tr>
+            <tr>
+              <td> OPCION_CONSULTA </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre de la consulta </td>
+            </tr>
+            <tr>
+              <td> OPCION_CONSULTA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> ID_OPCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de relación con la opción </td>
+            </tr>
+            <tr>
+              <td> OPCION_CONSULTA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> CONSULTA </td>
+              <td> VARCHAR2 </td>
+              <td> 4000 </td>
+              <td> Código SQL para ejecutar sobre la conexión </td>
+            </tr>
+            <tr>
+              <td> OPCION_CONSULTA </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> VALIDA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Si la consulta ha sido validada correctamente </td>
+            </tr>
+            <tr>
+              <td> OPCION_CONSULTA </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> CONEXION </td>
+              <td> VARCHAR2 </td>
+              <td> 250 </td>
+              <td> Conexión usada por la consulta </td>
+            </tr>
+            <tr>
+              <td> OPCION_PROCESO </td>
+              <td> 1 </td>
+              <td> FK </td>
+              <td> ID_OPCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> OPCION_PROCESO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> ID_PROCESO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> OPCION_PROCESO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria (DIGITADO) </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 150 </td>
+              <td> Descripción del parámetro general </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> TIPO </td>
+              <td> VARCHAR2 </td>
+              <td> 1 </td>
+              <td> Tipo de parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> VALOR </td>
+              <td> VARCHAR2 </td>
+              <td> 1000 </td>
+              <td> Valor del parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado del parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Descripción del parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> VALOR </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Valor del parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> TIPO </td>
+              <td> VARCHAR2 </td>
+              <td> 10 </td>
+              <td> Tipo del parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> TARGET </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Destino de los parámetros: programador de tareas | DASHBOARD </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> ID_APLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de aplicación </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> TABLA </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Nombre de tabla que se asigna parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> COLUMNA_ETIQUETA </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Nombre de la etiqueta que se asigna parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> COLUMNA_VALOR </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Valor que se asigna parámetro, según tabla - etiqueta </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_CONSULTA </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> RESET_CAMBIO_UN </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Resetear cambio de parámetro por unidad de negocio </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_PROGRAMADOR </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo autogenerado </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_PROGRAMADOR </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Descripción del parámetro </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO_PROGRAMADOR </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> VALOR </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Valor del parámetro </td>
+            </tr>
+            <tr>
+              <td> PASHISTORICO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> PASHISTORICO </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDUSUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID del usuario </td>
+            </tr>
+            <tr>
+              <td> PASHISTORICO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> HASHCODE </td>
+              <td> VARCHAR2 </td>
+              <td> 1024 </td>
+              <td> HASHCODE del clave que el usuario ha registrado </td>
+            </tr>
+            <tr>
+              <td> PASHISTORICO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> FECHA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de cambios del clave </td>
+            </tr>
+            <tr>
+              <td> PASINVALIDO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> PASINVALIDO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> CLAVETXT </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Password que se considera inválido </td>
+            </tr>
+            <tr>
+              <td> PASINVALIDO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> CLAVE </td>
+              <td> VARCHAR2 </td>
+              <td> 1000 </td>
+              <td> HASHCODE del password </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo Autogenerado </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> ACTIVO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo del perfil </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 200 </td>
+              <td> Descripción del perfil </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> LDAP </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Activar/Desactivar autenticación por directorio activo para un perfil </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 60 </td>
+              <td> Administrador </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 6 </td>
+              <td> FK </td>
+              <td> ID_POLITICA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la política asignada </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> PRIORIDAD </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> PERFIL </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Define el perfil de licencia asignado a un perfil de usuario </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> CREARIGXML </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Define si un perfil puede crear reportes </td>
+            </tr>
+            <tr>
+              <td> PERFIL </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> ID_UNIDADNEGOCIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID de la tabla UNIDAD_NEGOCIO </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 1 </td>
+              <td> FK </td>
+              <td> ID_OPCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria de la tabla OPCION </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_PERFIL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo del perfil </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> ACTUALIZAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permiso para actualizar en opción </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> CREAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permiso para crear en opción </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> ELIMINAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permiso para eliminar en opción </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> ENTRAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permiso para visualizar en opción </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> PROCESO1 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> PROCESO2 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> PROCESO3 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> PROCESO4 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> PROCESO5 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> PROCESO6 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> PROCESO7 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Permisos particulares por opción | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 14 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo -PRIMARY KEY </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 15 </td>
+              <td> (null) </td>
+              <td> PROCESO8 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 8 </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 16 </td>
+              <td> (null) </td>
+              <td> PROCESO9 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 9 </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 17 </td>
+              <td> (null) </td>
+              <td> PROCESO10 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 10 </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 18 </td>
+              <td> (null) </td>
+              <td> PROCESO11 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 11 </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 19 </td>
+              <td> (null) </td>
+              <td> PROCESO12 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 12 </td>
+            </tr>
+            <tr>
+              <td> PERFIL_OPCION </td>
+              <td> 20 </td>
+              <td> (null) </td>
+              <td> PROCESO13 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Proceso 13 </td>
+            </tr>
+            <tr>
+              <td> PERFIL_USUARIO </td>
+              <td> 1 </td>
+              <td> FK </td>
+              <td> ID_PERFIL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Perfil para una cuenta de usuario </td>
+            </tr>
+            <tr>
+              <td> PERFIL_USUARIO </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_USUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Usuario asignado a un perfil </td>
+            </tr>
+            <tr>
+              <td> PERFIL_USUARIO </td>
+              <td> 3 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID de la tabla </td>
+            </tr>
+            <tr>
+              <td> PERFIL_USUARIO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado del perfil del usuario | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> PIECONF </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave principal </td>
+            </tr>
+            <tr>
+              <td> PIECONF </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDCHAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al gráfico. </td>
+            </tr>
+            <tr>
+              <td> PIECONF </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> NOMBRESERIE </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna donde se tomarán los nombres de las variables a comparar. </td>
+            </tr>
+            <tr>
+              <td> PIECONF </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBREVARIABLE </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna donde se tomarán los valores numéricos a comparar. </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 150 </td>
+              <td> Nombre de la política </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 150 </td>
+              <td> Descripción de la política </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> INACTIVIDAD </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tiempo máximo de inactividad </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> PASLONMINIMA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Longitud mínima del password </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> PASLONMAXIMA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Longitud máxima del password </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> PASMAYUSCULA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Cantidad de caracteres en mayúsculas del password </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> PASMINUSCULA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Cantidad de caracteres en minúsculas del password </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> PASNUMERO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Cantidad de caracteres numéricos del password </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> PASESPECIAL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Cantidad de caracteres símbolos del password </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> PASCAMBIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Frecuencia en días con la que los usuarios deben cambiar su password </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> PRINTSCREEN </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Imprime la pantalla </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado actual de la Política </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 14 </td>
+              <td> (null) </td>
+              <td> CONTPASHISTORICO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 15 </td>
+              <td> (null) </td>
+              <td> INTENTOSFALLIDOS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> POLITICA </td>
+              <td> 16 </td>
+              <td> (null) </td>
+              <td> CONTPASINVALIDO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDTAREA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la tarea que se está ejecutando </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> FHINICIO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de inicio del proceso </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> FHFIN </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de fin del proceso </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado del subproceso en el programador de tareas |1 - en cola, por iniciar |2 – espera, esperando un
+                subproceso/ reintento |3 - corriendo normalmente |4 - bloqueado fallido |7 – terminado no ejecutado – no
+                fue posible |8 - terminado fallido |9 – terminado ok </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> REINTENTOS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Indicador de reintento de la tarea. Para análisis rápido </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> FHREINTENTO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha y hora del próximo reintento, si debe reintentar </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> EJECUCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Ejecución del proceso </td>
+            </tr>
+            <tr>
+              <td> PROCESO </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> VALORGRUPO </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Valor del grupo - para ejecuciones de grupos </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 500 </td>
+              <td> Nombre de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> PROCESADOS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Procesados de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> TOTAL </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Total, de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> POSICION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Posición de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> MENSAJE </td>
+              <td> VARCHAR2 </td>
+              <td> 500 </td>
+              <td> Mensaje de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> USUARIO </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Usuario de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> ID_USUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_USUARIO de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> FECHA_INICIO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> FECHA_INICIO de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> FECHA_FIN </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> FECHA_FIN de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> SERVIDOR </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Servidor de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> ID_APLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_APLICACION de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA </td>
+              <td> 14 </td>
+              <td> (null) </td>
+              <td> JSCRIPT </td>
+              <td> VARCHAR2 </td>
+              <td> 400 </td>
+              <td> JSCRIPT de los procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA_EVNT </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID de los eventos en las colas de ejecución </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA_EVNT </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_PROCESO_COLA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID_PROCESO_COLA que se relaciona con procesos en cola </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA_EVNT </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> EVENTO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Evento de los eventos en las colas de ejecución </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA_EVNT </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> USUARIO </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Usuario de los eventos en las colas de ejecución </td>
+            </tr>
+            <tr>
+              <td> PROCESO_COLA_EVNT </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> FECHA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de los eventos en las colas de ejecución </td>
+            </tr>
+            <tr>
+              <td> PROGRAMADOR_TAREAS </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo autogenerado </td>
+            </tr>
+            <tr>
+              <td> PROGRAMADOR_TAREAS </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> CICLO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Tiempo del proceso </td>
+            </tr>
+            <tr>
+              <td> PROGRAMADOR_TAREAS </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> MENSAJE </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> MENSAJE DE LA TAREA REALIZADA </td>
+            </tr>
+            <tr>
+              <td> RUTAS_CARGUE </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> RUTAS_CARGUE </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre de la ruta </td>
+            </tr>
+            <tr>
+              <td> RUTAS_CARGUE </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> RUTA </td>
+              <td> VARCHAR2 </td>
+              <td> 1000 </td>
+              <td> Ruta del sistema de archivo para el cargue </td>
+            </tr>
+            <tr>
+              <td> RUTAS_CARGUE </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> ACTIVO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Si esta Activo o No | 1= Activo 0= Inactivo </td>
+            </tr>
+            <tr>
+              <td> RUTAS_CARGUE </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> DESTINO </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Objetivo de ruta (Futura Implementación) </td>
+            </tr>
+            <tr>
+              <td> RUTAS_CARGUE </td>
+              <td> 6 </td>
+              <td> FK </td>
+              <td> ID_APLICACION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> ID de la aplicación a la que pertenece la ruta </td>
+            </tr>
+            <tr>
+              <td> SEMAFORO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> SEMAFORO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> IDLOG </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Relación débil con tabla LOGIN </td>
+            </tr>
+            <tr>
+              <td> SEMAFORO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> ID1 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAFORO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> ID2 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAFORO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> ID3 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAFORO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> ID4 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAFORO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> ID5 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> IDAPP </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Relación débil con tabla APLICACION </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> ID1 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> ID2 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> ID3 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> ID4 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> ID5 </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Identificador de bloqueo - Lógica de la aplicación </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> FECHAHORA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha desde la cual se realiza el bloqueo de la App </td>
+            </tr>
+            <tr>
+              <td> SEMAOFFLINE </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> IDUSUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Relación débil con tabla usuario </td>
+            </tr>
+            <tr>
+              <td> SQL_MSG </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo Autogenerado </td>
+            </tr>
+            <tr>
+              <td> SQL_MSG </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> MENSAJE </td>
+              <td> VARCHAR2 </td>
+              <td> 400 </td>
+              <td> Mensajes del sistema </td>
+            </tr>
+            <tr>
+              <td> SQL_MSG </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> MICROSOFT_SQL_SERVER </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Código SQL SERVER para errores en base de datos </td>
+            </tr>
+            <tr>
+              <td> SQL_MSG </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> ORACLE </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Código ORACLE para errores en base de datos </td>
+            </tr>
+            <tr>
+              <td> SQL_MSG </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> ELEMENTO_SQL </td>
+              <td> VARCHAR2 </td>
+              <td> 500 </td>
+              <td> Nombre de la validación (PK, UK, etc.) </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del subproceso - desde programador </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDPROCESO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del subproceso iniciado en el programador de tareas </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> IDACCIONT </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código de la acción que esta ejecutándose </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> CONSECUTIVO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo con que se ejecutará el subproceso </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> PRERREQUISITOS </td>
+              <td> VARCHAR2 </td>
+              <td> 20 </td>
+              <td> Prerrequisitos de ejecución del subproceso </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> TIPO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tipo de subproceso |1 – ejecutar un programa |2 – enviar mensaje email | 3 – enviar SMS </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> CADENABASE </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Cadena base de la acción a ejecutar | tipo = 1 - la ruta en la cual se encuentra el ejecutable |tipo
+                = 2 - asunto del email |tipo = 3 - texto del mensaje </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> CONTENIDO </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Contenido adicional para la ejecución del subproceso </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> PARAMETROS </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Cadena de parámetros para el reintento en el reintento (si los hay) </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> TXTCONCURRENCIA </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Texto llave de concurrencia, valor que se indicará al insertar en concurrencia (si aplica) </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado del subproceso en el programador de tareas |1 - en cola, por iniciar |2 – espera, esperando un
+                subproceso/ reintento |3 - corriendo normalmente |4 - bloqueado fallido |7 – terminado no ejecutado – no
+                fue posible |8 - terminado fallido |9 – terminado ok </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> FHMENSAJE </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Cadena base de la acción a ejecutar | tipo = 1 - la ruta en la cual se encuentra el ejecutable </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> FHINICIO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de inicio del subproceso </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 14 </td>
+              <td> (null) </td>
+              <td> FHFIN </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de fin del subproceso </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 15 </td>
+              <td> (null) </td>
+              <td> IDHILO </td>
+              <td> VARCHAR2 </td>
+              <td> 50 </td>
+              <td> Nombre del hilo en el lenguaje - verificar </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 16 </td>
+              <td> (null) </td>
+              <td> ID_CONCURRENCIA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SUBPROCESO </td>
+              <td> 17 </td>
+              <td> (null) </td>
+              <td> CONTENIDO2 </td>
+              <td> VARCHAR2 </td>
+              <td> 300 </td>
+              <td> Segundo contenido en el subproceso </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDCHAR </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia de CHAR principal. </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> NUMFILAS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Numero de filas a mostrar de las consultas relacionadas. </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> MOTRARCOLUMNA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Indica si mostrar el encabezado de las columnas. </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF_COLUMNA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave principal </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF_COLUMNA </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> ID_TABULADOCONF </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Referencia al tabulado principal. </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF_COLUMNA </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> NOMBRECONSULTA </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre de la columna en la consulta realizada, de la cual se tomará el valor. </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF_COLUMNA </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> NOMBREMOSTRAR </td>
+              <td> VARCHAR2 </td>
+              <td> 255 </td>
+              <td> Nombre a mostrar en la tabla </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF_COLUMNA </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> TIPO_MASCARA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tipo de mascara a aplicar en el dato </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF_COLUMNA </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> TAM_FUENTE </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Tamaño de la fuente </td>
+            </tr>
+            <tr>
+              <td> TABULADOCONF_COLUMNA </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> CONFIGURACION </td>
+              <td> VARCHAR2 </td>
+              <td> 1024 </td>
+              <td> Variable que guarda las diferentes configuraciones que se le pueden aplicar a las distintas mascaras.
+              </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> DESCRIPCION </td>
+              <td> VARCHAR2 </td>
+              <td> 150 </td>
+              <td> Descripción de la tarea que se desea automatizar </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> IDDESENCADENA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del desencadenante que permitirá automatizar la tarea </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 4 </td>
+              <td> FK </td>
+              <td> IDGRUPOPT </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del grupo al cual se enviarán los mensajes de ejecución </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 5 </td>
+              <td> FK </td>
+              <td> IDGRUPOP </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del grupo de proceso - 0 ninguno </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Estado actual de la tarea </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> MEJECUCION </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave foránea de un mensaje </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> ID_UNIDAD_NEGOCIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Almacena el ID de la tabla UNIDAD_NEGOCIO </td>
+            </tr>
+            <tr>
+              <td> TAREA </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> PRERREQUISITOS </td>
+              <td> VARCHAR2 </td>
+              <td> 200 </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> TOKEN </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo autogenerado </td>
+            </tr>
+            <tr>
+              <td> TOKEN </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> APLICACION </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Nombre de la aplicación </td>
+            </tr>
+            <tr>
+              <td> TOKEN </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> CONSUMIDO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Si ya ha sido consumido o está disponible para iniciar sesión </td>
+            </tr>
+            <tr>
+              <td> TOKEN </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> FECHA </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Cuando solicitan el token para iniciar sesión en una de las aplicaciones </td>
+            </tr>
+            <tr>
+              <td> TOKEN </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> TIPO </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Quien lo solicita </td>
+            </tr>
+            <tr>
+              <td> TOKEN </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> TOKEN </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Interno: identificador de inicio de sesión </td>
+            </tr>
+            <tr>
+              <td> TOKEN </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> USUARIO </td>
+              <td> VARCHAR2 </td>
+              <td> 100 </td>
+              <td> Usuario que ejecutó la operación </td>
+            </tr>
+            <tr>
+              <td> UNIDAD_NEGOCIO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Llave primaria </td>
+            </tr>
+            <tr>
+              <td> UNIDAD_NEGOCIO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> NOMBRE </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> Nombre de la unidad de negocio </td>
+            </tr>
+            <tr>
+              <td> UNIDAD_NEGOCIO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> ACTIVA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Activa inactiva </td>
+            </tr>
+            <tr>
+              <td> UNIDAD_NEGOCIO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> SCHEMAA </td>
+              <td> VARCHAR2 </td>
+              <td> 20 </td>
+              <td> Esquema de base de datos de la unidad de negocio </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 2 </td>
+              <td> (null) </td>
+              <td> APELLIDOS </td>
+              <td> VARCHAR2 </td>
+              <td> 60 </td>
+              <td> Apellidos del usuario o funcionario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 3 </td>
+              <td> (null) </td>
+              <td> CLAVE </td>
+              <td> VARCHAR2 </td>
+              <td> 256 </td>
+              <td> HASHCODE del password que el usuario ha registrado </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 4 </td>
+              <td> (null) </td>
+              <td> EMAIL </td>
+              <td> VARCHAR2 </td>
+              <td> 60 </td>
+              <td> Correo electrónico del usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 5 </td>
+              <td> (null) </td>
+              <td> ESTADO </td>
+              <td> VARCHAR2 </td>
+              <td> 20 </td>
+              <td> Estado actual del usuario |0- Inactivo |1- Activo |2- Expirado |3- Pre-expirado |9- Retirado </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 6 </td>
+              <td> (null) </td>
+              <td> FEC_ACT_USUARIO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha de activación del usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 7 </td>
+              <td> (null) </td>
+              <td> FEC_ULT_ACCESO </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha del último ingreso del usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 8 </td>
+              <td> (null) </td>
+              <td> LOGIN </td>
+              <td> VARCHAR2 </td>
+              <td> 15 </td>
+              <td> NICKNAME del usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 9 </td>
+              <td> (null) </td>
+              <td> NOMBRES </td>
+              <td> VARCHAR2 </td>
+              <td> 60 </td>
+              <td> Nombres del usuario o funcionario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 10 </td>
+              <td> (null) </td>
+              <td> CLAVE2 </td>
+              <td> VARCHAR2 </td>
+              <td> 1024 </td>
+              <td> HASHCODE de segunda opción </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 11 </td>
+              <td> (null) </td>
+              <td> DOCUMENTO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Número del documento de identidad del usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 12 </td>
+              <td> (null) </td>
+              <td> CELULAR </td>
+              <td> VARCHAR2 </td>
+              <td> 20 </td>
+              <td> Número de celular para envíos de SMS </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 13 </td>
+              <td> (null) </td>
+              <td> INTENTOS </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Cantidad de intentos fallidos que posee el usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 14 </td>
+              <td> (null) </td>
+              <td> FECHAPWD </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha en la cual realizó el último cambio de la contraseña </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 15 </td>
+              <td> (null) </td>
+              <td> VIGENCIAMIN </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Vigencia mínima del usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 16 </td>
+              <td> (null) </td>
+              <td> VIGENCIAMAX </td>
+              <td> DATE </td>
+              <td> 7 </td>
+              <td> Fecha máxima (final) para permitir el acceso del usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 17 </td>
+              <td> FK </td>
+              <td> IDAREA </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del área a la cual pertenece el usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 18 </td>
+              <td> FK </td>
+              <td> IDCARGO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del cargo al cual pertenece el usuario </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 19 </td>
+              <td> FK </td>
+              <td> IDARCHIVO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> FK del archivo que hace referencia a la imagen de la firma </td>
+            </tr>
+            <tr>
+              <td> USUARIO </td>
+              <td> 20 </td>
+              <td> (null) </td>
+              <td> MENU </td>
+              <td> VARCHAR2 </td>
+              <td> 25 </td>
+              <td> Almacena el menú en que esta el usuario </td>
+            </tr>
+            <tr>
+              <td> USUGRUPOPT </td>
+              <td> 1 </td>
+              <td> PK </td>
+              <td> ID </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Consecutivo - llave primaria </td>
+            </tr>
+            <tr>
+              <td> USUGRUPOPT </td>
+              <td> 2 </td>
+              <td> FK </td>
+              <td> IDUSUARIO </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del usuario que se asocia al grupo </td>
+            </tr>
+            <tr>
+              <td> USUGRUPOPT </td>
+              <td> 3 </td>
+              <td> FK </td>
+              <td> IDGRUPOPT </td>
+              <td> NUMBER </td>
+              <td> 22 </td>
+              <td> Código del grupo al cual se asocia el usuario </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="row-data">
+        <p id="cantRow"></p>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="valorFooter"></p>
+    </div>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>

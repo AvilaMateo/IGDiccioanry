@@ -1,0 +1,6019 @@
+<!DOCTYPE html>
+<html>
+<link href="../hoja.css" rel="stylesheet" type="text/css" />
+
+<head>
+  <meta charset=utf-8 />
+  <title>Diccionario de datos - Informacion Gerencial</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="navbar">
+      <a href="../index.html"> <img src="../images/logo2.png" /></a>
+      <h2>DICCIONARIO DE DATOS - SUITE IG</h2>
+    </div>
+
+    <div class="contenido">
+      <div class="breadcrumb">
+        <a href="menu.html"><img src="../images/icon/volver.png" alt=""></a> |
+        <p>OPCIONES</p><img src="../images/icon/mayor.png" alt="" width="10">
+        <p>RESTRICCIONES</p>
+        <h3>IGEQUAL</h3>
+      </div>
+      <div class="data">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th>NOMBRE RELACION</th>
+              <th>TIPO</th>
+              <th>TABLA</th>
+              <th>COLUMNA</th>
+              <th>TABLA REFER.</th>
+              <th>POSICION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> ALTURA_MORA_PK </td>
+              <td> P </td>
+              <td> ALTURA_MORA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> CK_1COMBIPUC </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> NATURALEZA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_1CUENTAS </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> INDCUENTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_1EMPRESA </td>
+              <td> C </td>
+              <td> EMPRESA </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_1ITEM_CON </td>
+              <td> C </td>
+              <td> ITEM_CON </td>
+              <td> TIPO_CTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_1MOVTOS </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_1PARAMTRANS </td>
+              <td> C </td>
+              <td> PARAMTRANS </td>
+              <td> ACTIVAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_1TRANSA </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> CONCOND </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_2COMBIPUC </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> TIPOCUENTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_2CUENTAS </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_2ITEM_CON </td>
+              <td> C </td>
+              <td> ITEM_CON </td>
+              <td> SIGNO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_2PARAMTRANS </td>
+              <td> C </td>
+              <td> PARAMTRANS </td>
+              <td> FUNCION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_2TRANSA </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> PAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_3ITEM_CON </td>
+              <td> C </td>
+              <td> ITEM_CON </td>
+              <td> PROVISION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_3TRANSA </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> LIQUIDAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CK_4ITEM_CON </td>
+              <td> C </td>
+              <td> ITEM_CON </td>
+              <td> FUENTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> CONF_COLUMNA_CRUCEMANUAL_PK </td>
+              <td> P </td>
+              <td> CONF_COLUMNA_CRUCEMANUAL </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_ETIQUETA </td>
+              <td> R </td>
+              <td> CONF_COLUMNA_CRUCEMANUAL </td>
+              <td> ID_ETIQUETA </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_GESTION_D </td>
+              <td> R </td>
+              <td> GESTION_D </td>
+              <td> ID_GESTION </td>
+              <td> PK_GEST </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_PRVSN_BASE_1 </td>
+              <td> R </td>
+              <td> PRVSN_BASE </td>
+              <td> ID_EMPRESA </td>
+              <td> PK_EMPR </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_TIP_INFORM </td>
+              <td> R </td>
+              <td> CONF_COLUMNA_CRUCEMANUAL </td>
+              <td> ID_TIPINFORM </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1AGRUPAR </td>
+              <td> R </td>
+              <td> AGRUPAR </td>
+              <td> IDGRUPO </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CAMP_COMPL </td>
+              <td> R </td>
+              <td> CAMP_COMPL </td>
+              <td> ID_ETIQUETA_COMPL </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CAMPO </td>
+              <td> R </td>
+              <td> CAMPO </td>
+              <td> ID_ETIQUETA </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1COMBIPUC </td>
+              <td> R </td>
+              <td> COMBIPUC </td>
+              <td> IDREL </td>
+              <td> PK_REL </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1COMPLEMENTAR </td>
+              <td> R </td>
+              <td> COMPLEMENTAR </td>
+              <td> ID_TIPINFO_COMPL </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONCILIACION </td>
+              <td> R </td>
+              <td> CONCILIACION </td>
+              <td> ID_TIP_INF2 </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONCILIA_COL </td>
+              <td> R </td>
+              <td> CONCILIA_COL </td>
+              <td> ID_ETIQUETAF2 </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_AGRUP </td>
+              <td> R </td>
+              <td> CONF_AGRUP </td>
+              <td> IDGRUPO </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_AGRUP_D </td>
+              <td> R </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_CONTABILIDAD </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD </td>
+              <td> ID_TIPINF </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_CONTABILIDAD_D </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> ID_CONFCONTABILIDAD </td>
+              <td> PK_CONF_CONTABILI </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_CONTABILIDAD_F </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD_F </td>
+              <td> ID_CONFCONTABILIDAD </td>
+              <td> PK_CONF_CONTABILI </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_CONTABILIDAD_V </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD_V </td>
+              <td> ID_CONF_CONTABILIDADD </td>
+              <td> PK_CONF_CONTABILIDA </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_CRUCE </td>
+              <td> R </td>
+              <td> CONF_CRUCE </td>
+              <td> IDGRUPO </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_CRUCE_D </td>
+              <td> R </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_TIPINFOR_2 </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_FRACC </td>
+              <td> R </td>
+              <td> CONF_FRACC </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_FRACC_D </td>
+              <td> R </td>
+              <td> CONF_FRACC_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_GASTOS_GMF </td>
+              <td> R </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> ID_GRUPOSCTA </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_GASTOS_GMF_D </td>
+              <td> R </td>
+              <td> CONF_GASTOS_GMF_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_RELECTURA </td>
+              <td> R </td>
+              <td> CONF_RELECTURA </td>
+              <td> ID_TIPINFORM </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CONF_RELECTURA_D </td>
+              <td> R </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ID_RELECTURA </td>
+              <td> PK_CONF_RELECT </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CRG_ARCHIVOS_DET </td>
+              <td> R </td>
+              <td> CRG_ARCHIVOS_DET </td>
+              <td> ID_CRG_ARCHIVOS </td>
+              <td> PK_CRG_ARCHI </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CRG_GRUPO </td>
+              <td> R </td>
+              <td> CRG_GRUPO_E </td>
+              <td> ID_GRUPO </td>
+              <td> PK_CRG_GR </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CRG_RESUMEN </td>
+              <td> R </td>
+              <td> CRG_RESUMEN </td>
+              <td> ID_CRG_ARCHIVOS </td>
+              <td> PK_CRG_ARCHI </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_CRG_RESUMEN_ARCHIVO </td>
+              <td> R </td>
+              <td> CRG_RESUMEN_ARCHIVO </td>
+              <td> ID_CRG_RESUMEN </td>
+              <td> PK_CRG_RESU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CRG_VALOR_DEFECTO </td>
+              <td> R </td>
+              <td> CRG_VALOR_DEFECTO </td>
+              <td> ID_ETIQUETA </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CRUCE </td>
+              <td> R </td>
+              <td> CRUCE </td>
+              <td> IDGRUPO </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1CUENTAS </td>
+              <td> R </td>
+              <td> CUENTAS </td>
+              <td> TIP_CTA </td>
+              <td> PK_TIP_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1ESTADO_EXPR </td>
+              <td> R </td>
+              <td> ESTADO_EXPR </td>
+              <td> ID_REPORTEH </td>
+              <td> PK_REPOR </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1ESTRUCTURA </td>
+              <td> R </td>
+              <td> ESTRUCTURA </td>
+              <td> ID_TIP_INFO </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1ETIQUETA </td>
+              <td> R </td>
+              <td> ETIQUETA </td>
+              <td> ID_TIPINFO </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1EXP_CAR </td>
+              <td> R </td>
+              <td> EXP_CAR </td>
+              <td> ID_TIPINF_BASE </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1EXP_CAR_C </td>
+              <td> R </td>
+              <td> EXP_CAR_C </td>
+              <td> ID_EXP_CAR </td>
+              <td> PK_EXP_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1EXP_CAR_F </td>
+              <td> R </td>
+              <td> EXP_CAR_F </td>
+              <td> ID_FILTROS </td>
+              <td> PK_FILT </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1EXP_CAR_U </td>
+              <td> R </td>
+              <td> EXP_CAR_U </td>
+              <td> ID_UNIR </td>
+              <td> PK_U </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1FILTRO </td>
+              <td> R </td>
+              <td> FILTRO </td>
+              <td> ID_TIPINFORM </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1FILTRO_COMPL </td>
+              <td> R </td>
+              <td> FILTRO_COMPL </td>
+              <td> ID_ETIQUETA_COMPL </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1FILTRO_D </td>
+              <td> R </td>
+              <td> FILTRO_D </td>
+              <td> ID_FILTRO </td>
+              <td> PK_FIL </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1FILTROS </td>
+              <td> R </td>
+              <td> FILTROS </td>
+              <td> ID_TIP_INF </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1FLUJO </td>
+              <td> R </td>
+              <td> FLUJO </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1FLUJO_MENSAJE </td>
+              <td> R </td>
+              <td> FLUJO_MENSAJE </td>
+              <td> ID_FLUJO </td>
+              <td> PK_FL </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1FRACCIONAR </td>
+              <td> R </td>
+              <td> FRACCIONAR </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1GASTOS_GMF_PROCESO </td>
+              <td> R </td>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> ID_CONF_GASTOS_GMF </td>
+              <td> SYS_C00107 </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1GASTOS_GMF_PROCESO_D </td>
+              <td> R </td>
+              <td> GASTOS_GMF_PROCESO_D </td>
+              <td> ID_GASTOS_GMF_PROCESO </td>
+              <td> SYS_C00107 </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_GENERACION </td>
+              <td> R </td>
+              <td> GENERACION </td>
+              <td> ID_INTERFACE </td>
+              <td> PK_INTERF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_GENERACION_CONTABILIDAD </td>
+              <td> R </td>
+              <td> GENERACION_CONTABILIDAD </td>
+              <td> ID_GENERACION </td>
+              <td> PK_GENERAC </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_GENERACION_ESTADO </td>
+              <td> R </td>
+              <td> GENERACION_ESTADO </td>
+              <td> ID_GENERACION </td>
+              <td> PK_GENERAC </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_GENERACION_PARAMETRO </td>
+              <td> R </td>
+              <td> GENERACION_PARAMETRO </td>
+              <td> ID_GENERACION </td>
+              <td> PK_GENERAC </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1GESTION </td>
+              <td> R </td>
+              <td> GESTION_D </td>
+              <td> ID_SEGUIMIENTO </td>
+              <td> PRVSN_SEGUIMIENTO </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1GESTION_ARCHIVO </td>
+              <td> R </td>
+              <td> GESTION_ARCHIVO </td>
+              <td> ID_GESTIOND </td>
+              <td> PK_GESTIO </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1GESTIONP_GESTION </td>
+              <td> R </td>
+              <td> GESTIONP_GESTION </td>
+              <td> ID_GESTION </td>
+              <td> PK_GEST </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1GRUPOD </td>
+              <td> R </td>
+              <td> CRG_GRUPO_D </td>
+              <td> ID_GRUPO </td>
+              <td> PK_CRG_GR </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1GRUPOSCTA_D </td>
+              <td> R </td>
+              <td> GRUPOSCTA_D </td>
+              <td> ID_GRUPOSCTA </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1INFORMESFC </td>
+              <td> R </td>
+              <td> INFORMESFC </td>
+              <td> IDGRUPO </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_INTERFACE_CAMPO </td>
+              <td> R </td>
+              <td> INTERFACE_CAMPO </td>
+              <td> ID_INTERFACE </td>
+              <td> PK_INTERF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_INTERFACE_PARAMETRO </td>
+              <td> R </td>
+              <td> INTERFACE_PARAMETRO </td>
+              <td> ID_INTERFACE </td>
+              <td> PK_INTERF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1MARCACION </td>
+              <td> R </td>
+              <td> MARCACION </td>
+              <td> ID_PROCESO </td>
+              <td> PK_PROCE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1MARCACION_D </td>
+              <td> R </td>
+              <td> MARCACION_D </td>
+              <td> ID_MARCACION </td>
+              <td> PK_MARCAC </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1MARCACION_USR </td>
+              <td> R </td>
+              <td> MARCACION_USR </td>
+              <td> ID_MARCACION </td>
+              <td> PK_MARCAC </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1MONVAL </td>
+              <td> R </td>
+              <td> MONVAL </td>
+              <td> ID_MONEDA </td>
+              <td> PK_MONE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1MOVTOS </td>
+              <td> R </td>
+              <td> MOVTOS </td>
+              <td> ID_TIPINFORM </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1PARAMETRO </td>
+              <td> R </td>
+              <td> PARAMETRO </td>
+              <td> IDCUENTA </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1PARAMTRANS </td>
+              <td> R </td>
+              <td> PARAMTRANS </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1PRVSN_CONTABILIZACION </td>
+              <td> R </td>
+              <td> PRVSN_CONTABILIZACION </td>
+              <td> IDCUENTACONT </td>
+              <td> PK_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_PRVSN_PARTIDA </td>
+              <td> R </td>
+              <td> PRVSN_PARTIDA </td>
+              <td> ID_PRVSNPADRE </td>
+              <td> PRVSN_BASE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1_PRVSN_TIPO_D </td>
+              <td> R </td>
+              <td> PRVSN_TIPO_D </td>
+              <td> ID_PRVSN_TIPO </td>
+              <td> SYS_C00107 </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1PUC </td>
+              <td> R </td>
+              <td> PUC </td>
+              <td> ID_TIPOCONTABILIZACION </td>
+              <td> PK_TIPO_CONTABILI </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1REGLAS_RIESGO </td>
+              <td> R </td>
+              <td> REGLAS_RIESGO </td>
+              <td> IDCUENTAS1 </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1REPORTEH </td>
+              <td> R </td>
+              <td> REPORTEH </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1SALDOS </td>
+              <td> R </td>
+              <td> SALDOS </td>
+              <td> IDCUENTA </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1TIP_INFORM </td>
+              <td> R </td>
+              <td> TIP_INFORM </td>
+              <td> ID_MAESTRA </td>
+              <td> PK_TABLA_MAES </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1TRANSA </td>
+              <td> R </td>
+              <td> TRANSA </td>
+              <td> COD_OPERAC </td>
+              <td> PK_OPERA </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1TRANSACCION </td>
+              <td> R </td>
+              <td> TRANSACCION </td>
+              <td> COD_ITEM2 </td>
+              <td> PK_ITEM_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1TRANSACCIONES_GASTOS_IE </td>
+              <td> R </td>
+              <td> TRANSACCIONES_GASTOS_IE </td>
+              <td> ID_TIP_INF </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1TRANSACCIONES_GASTOS_IE_D </td>
+              <td> R </td>
+              <td> TRANSACCIONES_GASTOS_IE_D </td>
+              <td> ID_TRAN_GASTOS_IE </td>
+              <td> PK_TRANSACCIONES_GASTOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1TRIAGMON </td>
+              <td> R </td>
+              <td> TRIAGMON </td>
+              <td> ID_MON_CONV </td>
+              <td> PK_MONE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1UNIR </td>
+              <td> R </td>
+              <td> UNIR </td>
+              <td> ID_TIPINFO_UNIR </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1UNIR_MAP </td>
+              <td> R </td>
+              <td> UNIR_MAP </td>
+              <td> ID_UNIR </td>
+              <td> PK_U </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1USR_GRUPOSCTA </td>
+              <td> R </td>
+              <td> USR_GRUPOSCTA </td>
+              <td> ID_GRUPOSCTA </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_1USR_PROCESO </td>
+              <td> R </td>
+              <td> USR_PROCESO </td>
+              <td> ID_PROCESO </td>
+              <td> PK_PROCE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK1_VALORES_ADICIONALES </td>
+              <td> R </td>
+              <td> VALORES_ADICIONALES </td>
+              <td> ID_TABLA </td>
+              <td> PK_TA </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2AGRUPAR </td>
+              <td> R </td>
+              <td> AGRUPAR </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CAMP_COMPL </td>
+              <td> R </td>
+              <td> CAMP_COMPL </td>
+              <td> ID_ETIQUETA_BASE </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CAMPO </td>
+              <td> R </td>
+              <td> CAMPO </td>
+              <td> ID_ESTRUCTURA </td>
+              <td> PK_ESTRUCT </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2COMPLEMENTAR </td>
+              <td> R </td>
+              <td> COMPLEMENTAR </td>
+              <td> ID_TIPINFO_BASE </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONCILIACION </td>
+              <td> R </td>
+              <td> CONCILIACION </td>
+              <td> ID_TIP_INF1 </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONCILIA_COL </td>
+              <td> R </td>
+              <td> CONCILIA_COL </td>
+              <td> ID_ETIQUETAF1 </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_AGRUP </td>
+              <td> R </td>
+              <td> CONF_AGRUP </td>
+              <td> ID_TIPINFORM </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_AGRUP_D </td>
+              <td> R </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ID_CONF_AGRUP </td>
+              <td> PK_CONF_AG </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_CONTABILIDAD </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD </td>
+              <td> ID_GRUPOSCTA </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_CONTABILIDAD_D </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_CRUCE </td>
+              <td> R </td>
+              <td> CONF_CRUCE </td>
+              <td> IDCUENTA </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_CRUCE_D </td>
+              <td> R </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_TIPINFOR_1 </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_FRACC </td>
+              <td> R </td>
+              <td> CONF_FRACC </td>
+              <td> IDGRUPO </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_FRACC_D </td>
+              <td> R </td>
+              <td> CONF_FRACC_D </td>
+              <td> ID_CONF_FRACC </td>
+              <td> PK_CONF_FR </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_GASTOS_GMF </td>
+              <td> R </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> ID_TIP_INF </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_GASTOS_GMF_D </td>
+              <td> R </td>
+              <td> CONF_GASTOS_GMF_D </td>
+              <td> ID_CONF_GASTOS_GMF </td>
+              <td> SYS_C00107 </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CONF_RELECTURA_D </td>
+              <td> R </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ID_ESTRUCTURA </td>
+              <td> PK_ESTRUCT </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CRG_VALOR_DEFECTO </td>
+              <td> R </td>
+              <td> CRG_VALOR_DEFECTO </td>
+              <td> ID_CRG_DETALLE </td>
+              <td> PK_CRG_ARCHIVOS_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CRUCE </td>
+              <td> R </td>
+              <td> CRUCE </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2CUENTAS </td>
+              <td> R </td>
+              <td> CUENTAS </td>
+              <td> NCOD_MONED </td>
+              <td> PK_MONE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2EXP_CAR_C </td>
+              <td> R </td>
+              <td> EXP_CAR_C </td>
+              <td> ID_COMPL </td>
+              <td> PK_COMPLEMEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2EXP_CAR_F </td>
+              <td> R </td>
+              <td> EXP_CAR_F </td>
+              <td> ID_EXP_CAR </td>
+              <td> PK_EXP_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2EXP_CAR_U </td>
+              <td> R </td>
+              <td> EXP_CAR_U </td>
+              <td> ID_EXP_CAR </td>
+              <td> PK_EXP_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2FILTRO_COMPL </td>
+              <td> R </td>
+              <td> FILTRO_COMPL </td>
+              <td> ID_ETIQUETA_BASE </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK2_GENERACION_PARAMETRO </td>
+              <td> R </td>
+              <td> GENERACION_PARAMETRO </td>
+              <td> ID_PARAMETRO </td>
+              <td> PK_INTERFACE_PARAME </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2GESTIONP_GESTION </td>
+              <td> R </td>
+              <td> GESTIONP_GESTION </td>
+              <td> ID_GESTIONP </td>
+              <td> PK_GESTIO </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2GRUPOD </td>
+              <td> R </td>
+              <td> CRG_GRUPO_D </td>
+              <td> ID_ARCHIVO </td>
+              <td> PK_CRG_ARCHI </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2GRUPOSCTA_D </td>
+              <td> R </td>
+              <td> GRUPOSCTA_D </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2INFORMESFC </td>
+              <td> R </td>
+              <td> INFORMESFC </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2MARCACION_D </td>
+              <td> R </td>
+              <td> MARCACION_D </td>
+              <td> ID_TIPINFORM </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2MOVTOS </td>
+              <td> R </td>
+              <td> MOVTOS </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2_PRVSN_TIPO_D </td>
+              <td> R </td>
+              <td> PRVSN_TIPO_D </td>
+              <td> ID_PRVSN_SEGUIMIENTO </td>
+              <td> PRVSN_SEGUIMIENTO </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2REPORTEH </td>
+              <td> R </td>
+              <td> REPORTEH </td>
+              <td> ID_EXP_CAR </td>
+              <td> PK_EXP_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2RIESGO_CUENTAS </td>
+              <td> R </td>
+              <td> REGLAS_RIESGO </td>
+              <td> IDCUENTAS2 </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2TRANSACCION </td>
+              <td> R </td>
+              <td> TRANSACCION </td>
+              <td> COD_ITEM </td>
+              <td> PK_ITEM_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2TRANSACCIONES_GASTOS_IE </td>
+              <td> R </td>
+              <td> TRANSACCIONES_GASTOS_IE </td>
+              <td> ID_COD_BAN </td>
+              <td> PK_BAN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2TRANSACCIONES_GASTOS_IE_D </td>
+              <td> R </td>
+              <td> TRANSACCIONES_GASTOS_IE_D </td>
+              <td> ID_TRAN </td>
+              <td> PK_TRANSACC </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2TRANSACCIONESGASTOSIED </td>
+              <td> R </td>
+              <td> TRANSACCIONES_GASTOS_IE_D </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2TRIAGMON </td>
+              <td> R </td>
+              <td> TRIAGMON </td>
+              <td> ID_MON_BASE </td>
+              <td> PK_MONE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2UNIR </td>
+              <td> R </td>
+              <td> UNIR </td>
+              <td> ID_TIPINFO_BASE </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_2UNIR_MAP </td>
+              <td> R </td>
+              <td> UNIR_MAP </td>
+              <td> ID_ETIQUETA_UNIR </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK2_VALORES_ADICIONALES </td>
+              <td> R </td>
+              <td> VALORES_ADICIONALES </td>
+              <td> ID_CAMPO </td>
+              <td> PK_CAMPO_TA </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3AGRUPAR </td>
+              <td> R </td>
+              <td> AGRUPAR </td>
+              <td> IDCONFIG </td>
+              <td> PK_CONF_AG </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CAMP_COMPL </td>
+              <td> R </td>
+              <td> CAMP_COMPL </td>
+              <td> ID_COMPLEMENTAR </td>
+              <td> PK_COMPLEMEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3COMBIPUC </td>
+              <td> R </td>
+              <td> COMBIPUC </td>
+              <td> CODIGOPUC </td>
+              <td> PK_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CONCILIA_COL </td>
+              <td> R </td>
+              <td> CONCILIA_COL </td>
+              <td> ID_CONCILIACION </td>
+              <td> PK_CONCILIAC </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CONF_AGRUP </td>
+              <td> R </td>
+              <td> CONF_AGRUP </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CONF_CONTABILIDAD </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD </td>
+              <td> ID_CUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CONF_CONTABILIDAD_D </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> ID_PUC </td>
+              <td> PK_ </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CONF_CRUCE_D </td>
+              <td> R </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_ETIQUETA_2 </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CONF_FRACC </td>
+              <td> R </td>
+              <td> CONF_FRACC </td>
+              <td> ID_TIPINFORM </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CONF_RELECTURA_D </td>
+              <td> R </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ID_FILTROS </td>
+              <td> PK_FILT </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3CUENTAS </td>
+              <td> R </td>
+              <td> CUENTAS </td>
+              <td> N_MONLI </td>
+              <td> PK_MONE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3FILTRO_COMPL </td>
+              <td> R </td>
+              <td> FILTRO_COMPL </td>
+              <td> ID_COMPLEMENTAR </td>
+              <td> PK_COMPLEMEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3REGLAS_RIESGO </td>
+              <td> R </td>
+              <td> REGLAS_RIESGO </td>
+              <td> ID_TIPINFORM_1 </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3REPORTEH </td>
+              <td> R </td>
+              <td> REPORTEH </td>
+              <td> ID_TIP_INF </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3TRANSACCION </td>
+              <td> R </td>
+              <td> TRANSACCION </td>
+              <td> COD_BAN </td>
+              <td> PK_BAN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3TRANSACCIONESGASTOSIED </td>
+              <td> R </td>
+              <td> TRANSACCIONES_GASTOS_IE_D </td>
+              <td> IDCUENTAS2 </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_3UNIR_MAP </td>
+              <td> R </td>
+              <td> UNIR_MAP </td>
+              <td> ID_ETIQUETA_BASE </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_4COMBIPUC </td>
+              <td> R </td>
+              <td> COMBIPUC </td>
+              <td> ID_TIPINFORM </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_4CONF_CONTABILIDAD </td>
+              <td> R </td>
+              <td> CONF_CONTABILIDAD </td>
+              <td> ID_TIPO_CONTABILIDAD </td>
+              <td> PK_TIPO_CONTABILI </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_4CONF_CRUCE_D </td>
+              <td> R </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_ETIQUETA_1 </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_4CUENTAS </td>
+              <td> R </td>
+              <td> CUENTAS </td>
+              <td> N_MONEX </td>
+              <td> PK_MONE </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_4RIESGO_REGLAS </td>
+              <td> R </td>
+              <td> REGLAS_RIESGO </td>
+              <td> ID_TIPINFORM_2 </td>
+              <td> PK_TIP_INF </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_5COMBIPUC </td>
+              <td> R </td>
+              <td> COMBIPUC </td>
+              <td> ID_ETIQUETA </td>
+              <td> PK_ETIQU </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_5CONF_CRUCE_D </td>
+              <td> R </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_CONF_CRUCE </td>
+              <td> PK_CONF_CR </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_5CUENTAS </td>
+              <td> R </td>
+              <td> CUENTAS </td>
+              <td> CODEMPR </td>
+              <td> PK_EMPR </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_6CUENTAS </td>
+              <td> R </td>
+              <td> CUENTAS </td>
+              <td> COD_BAN </td>
+              <td> PK_BAN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> FK_7CUENTAS </td>
+              <td> R </td>
+              <td> CUENTAS </td>
+              <td> CODEMPRPRVSN </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_AGRUPAR </td>
+              <td> P </td>
+              <td> AGRUPAR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_BANCOS </td>
+              <td> P </td>
+              <td> BANCOS </td>
+              <td> COD_BAN </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CAMP_COMPL </td>
+              <td> P </td>
+              <td> CAMP_COMPL </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CAMPO </td>
+              <td> P </td>
+              <td> CAMPO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CAMPO_TABLA </td>
+              <td> P </td>
+              <td> CAMPO_TABLA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CLASRIESGO </td>
+              <td> P </td>
+              <td> CLASRIESGO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_COLCMBPUC </td>
+              <td> P </td>
+              <td> COLCMBPUC </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_COMBIPUC </td>
+              <td> P </td>
+              <td> COMBIPUC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_COMPLEMENTAR </td>
+              <td> P </td>
+              <td> COMPLEMENTAR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONCILIACION </td>
+              <td> P </td>
+              <td> CONCILIACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONCILIA_COL </td>
+              <td> P </td>
+              <td> CONCILIA_COL </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_AGRUP </td>
+              <td> P </td>
+              <td> CONF_AGRUP </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_AGRUP_D </td>
+              <td> P </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_CONTABILIDAD </td>
+              <td> P </td>
+              <td> CONF_CONTABILIDAD </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_CONTABILIDAD_D </td>
+              <td> P </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_CONTABILIDAD_F </td>
+              <td> P </td>
+              <td> CONF_CONTABILIDAD_F </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_CONTABILIDAD_V </td>
+              <td> P </td>
+              <td> CONF_CONTABILIDAD_V </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_CRUCE </td>
+              <td> P </td>
+              <td> CONF_CRUCE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_CRUCE_D </td>
+              <td> P </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_FRACC </td>
+              <td> P </td>
+              <td> CONF_FRACC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_FRACC_D </td>
+              <td> P </td>
+              <td> CONF_FRACC_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_RELECTURA </td>
+              <td> P </td>
+              <td> CONF_RELECTURA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CONF_RELECTURA_D </td>
+              <td> P </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CRG_ARCHIVOS </td>
+              <td> P </td>
+              <td> CRG_ARCHIVOS </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CRG_ARCHIVOS_DET </td>
+              <td> P </td>
+              <td> CRG_ARCHIVOS_DET </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CRG_GRUPO </td>
+              <td> P </td>
+              <td> CRG_GRUPO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CRG_RESUMEN </td>
+              <td> P </td>
+              <td> CRG_RESUMEN </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CRG_RESUMEN_ARCHIVO </td>
+              <td> P </td>
+              <td> CRG_RESUMEN_ARCHIVO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CRG_VALOR_DEFECTO </td>
+              <td> P </td>
+              <td> CRG_VALOR_DEFECTO </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CRG_VALOR_DEFECTO </td>
+              <td> P </td>
+              <td> CRG_VALOR_DEFECTO </td>
+              <td> ID_CRG_DETALLE </td>
+              <td> (null) </td>
+              <td> 2 </td>
+            </tr>
+            <tr>
+              <td> PK_CRUCE </td>
+              <td> P </td>
+              <td> CRUCE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_CUENTAS </td>
+              <td> P </td>
+              <td> CUENTAS </td>
+              <td> IDCUENTAS </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_DESTINA </td>
+              <td> P </td>
+              <td> DESTINA </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_EMPRESA </td>
+              <td> P </td>
+              <td> EMPRESA </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_ESTADO_EXPR </td>
+              <td> P </td>
+              <td> ESTADO_EXPR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_ESTRUCTURA </td>
+              <td> P </td>
+              <td> ESTRUCTURA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_ETIQUETA </td>
+              <td> P </td>
+              <td> ETIQUETA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_EXP_CAR </td>
+              <td> P </td>
+              <td> EXP_CAR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_EXP_CAR_C </td>
+              <td> P </td>
+              <td> EXP_CAR_C </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_EXP_CAR_F </td>
+              <td> P </td>
+              <td> EXP_CAR_F </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_EXP_CAR_U </td>
+              <td> P </td>
+              <td> EXP_CAR_U </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FILTRO </td>
+              <td> P </td>
+              <td> FILTRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FILTRO_COMPL </td>
+              <td> P </td>
+              <td> FILTRO_COMPL </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FILTRO_D </td>
+              <td> P </td>
+              <td> FILTRO_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FILTROS </td>
+              <td> P </td>
+              <td> FILTROS </td>
+              <td> ID_FILT </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FLUJO </td>
+              <td> P </td>
+              <td> FLUJO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FLUJO_MENSAJE </td>
+              <td> P </td>
+              <td> FLUJO_MENSAJE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FRACCIONAR </td>
+              <td> P </td>
+              <td> FRACCIONAR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FUENTE_M </td>
+              <td> P </td>
+              <td> FUENTE_M </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FUENTE1_TMP_PRO </td>
+              <td> P </td>
+              <td> FUENTE1_TMP_PRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_FUENTE2_TMP_PRO </td>
+              <td> P </td>
+              <td> FUENTE2_TMP_PRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GENERACION </td>
+              <td> P </td>
+              <td> GENERACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GENERACION_CONTABILIDAD </td>
+              <td> P </td>
+              <td> GENERACION_CONTABILIDAD </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GENERACION_ESTADO </td>
+              <td> P </td>
+              <td> GENERACION_ESTADO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GENERACION_PARAMETRO </td>
+              <td> P </td>
+              <td> GENERACION_PARAMETRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GESTION </td>
+              <td> P </td>
+              <td> GESTION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GESTION_ARCHIVO </td>
+              <td> P </td>
+              <td> GESTION_ARCHIVO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GESTION_D </td>
+              <td> P </td>
+              <td> GESTION_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GESTION_P </td>
+              <td> P </td>
+              <td> GESTION_P </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GRUPOD </td>
+              <td> P </td>
+              <td> CRG_GRUPO_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GRUPO_E </td>
+              <td> P </td>
+              <td> CRG_GRUPO_E </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GRUPOSCTA </td>
+              <td> P </td>
+              <td> GRUPOSCTA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_GRUPOSCTA_D </td>
+              <td> P </td>
+              <td> GRUPOSCTA_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_IDS_TMP </td>
+              <td> P </td>
+              <td> IDS_TMP </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_INFORMESFC </td>
+              <td> P </td>
+              <td> INFORMESFC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_INTERFACE </td>
+              <td> P </td>
+              <td> INTERFACE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_INTERFACE_CAMPO </td>
+              <td> P </td>
+              <td> INTERFACE_CAMPO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_INTERFACE_PARAMETRO </td>
+              <td> P </td>
+              <td> INTERFACE_PARAMETRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_ITEM_CON </td>
+              <td> P </td>
+              <td> ITEM_CON </td>
+              <td> COD_ITEM </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_MARCACION </td>
+              <td> P </td>
+              <td> MARCACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_MARCACION_D </td>
+              <td> P </td>
+              <td> MARCACION_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_MARCACION_USR </td>
+              <td> P </td>
+              <td> MARCACION_USR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_MONEDAS </td>
+              <td> P </td>
+              <td> MONEDAS </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_MONVAL </td>
+              <td> P </td>
+              <td> MONVAL </td>
+              <td> ID_MONVAL </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_MOVTOS </td>
+              <td> P </td>
+              <td> MOVTOS </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_OPERACIO </td>
+              <td> P </td>
+              <td> OPERACIO </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_PARAMETRO </td>
+              <td> P </td>
+              <td> PARAMETRO </td>
+              <td> ID_PARAM </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_PARAMTRANS </td>
+              <td> P </td>
+              <td> PARAMTRANS </td>
+              <td> ID_TRAN </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_PROCESOS </td>
+              <td> P </td>
+              <td> PROCESOS </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_PROGRAMADOR_TAREAS </td>
+              <td> P </td>
+              <td> PROGRAMADOR_TAREAS </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_PRVSN_AVANCEAREA </td>
+              <td> P </td>
+              <td> PRVSN_AVANCEAREA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_PRVSN_CONTABILIZACION </td>
+              <td> P </td>
+              <td> PRVSN_CONTABILIZACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_PRVSN_PARTIDA </td>
+              <td> P </td>
+              <td> PRVSN_PARTIDA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_PUC </td>
+              <td> P </td>
+              <td> PUC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_REGLAS_RIESGO </td>
+              <td> P </td>
+              <td> REGLAS_RIESGO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_RELPUC </td>
+              <td> P </td>
+              <td> RELPUC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_REPORTEH </td>
+              <td> P </td>
+              <td> REPORTEH </td>
+              <td> ID_REPH </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_SALDOS </td>
+              <td> P </td>
+              <td> SALDOS </td>
+              <td> ID_SALDOS </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TABLA </td>
+              <td> P </td>
+              <td> TABLA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TABLA_MAESTRA </td>
+              <td> P </td>
+              <td> TABLA_MAESTRA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TIP_CTA </td>
+              <td> P </td>
+              <td> TIP_CTA </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TIP_INFORM </td>
+              <td> P </td>
+              <td> TIP_INFORM </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TIPO_CONTABILIDAD </td>
+              <td> P </td>
+              <td> TIPO_CONTABILIDAD </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TRANSA </td>
+              <td> P </td>
+              <td> TRANSA </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TRANSACCION </td>
+              <td> P </td>
+              <td> TRANSACCION </td>
+              <td> ID_TRAN </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TRANSACCIONES_GASTOS_IE </td>
+              <td> P </td>
+              <td> TRANSACCIONES_GASTOS_IE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TRANSACCIONES_GASTOS_IE_D </td>
+              <td> P </td>
+              <td> TRANSACCIONES_GASTOS_IE_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_TRIAGMON </td>
+              <td> P </td>
+              <td> TRIAGMON </td>
+              <td> ID_TRIAG </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_UNIR </td>
+              <td> P </td>
+              <td> UNIR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_UNIR_MAP </td>
+              <td> P </td>
+              <td> UNIR_MAP </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_USR_GRUPOCTA </td>
+              <td> P </td>
+              <td> USR_GRUPOSCTA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_USR_PROCESO </td>
+              <td> P </td>
+              <td> USR_PROCESO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PK_VALORES_ADICIONALES </td>
+              <td> P </td>
+              <td> VALORES_ADICIONALES </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PRVSN_BASE_PK </td>
+              <td> P </td>
+              <td> PRVSN_BASE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PRVSN_CLASIFICACION_PK </td>
+              <td> P </td>
+              <td> PRVSN_CLASIFICACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PRVSN_EMPRESA_PK </td>
+              <td> P </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> PRVSN_SEGUIMIENTO_PK </td>
+              <td> P </td>
+              <td> PRVSN_SEGUIMIENTO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> RELPUC_FK1 </td>
+              <td> R </td>
+              <td> RELPUC </td>
+              <td> IDCUENTAS </td>
+              <td> PK_CUEN </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> RELPUC_FK2 </td>
+              <td> R </td>
+              <td> RELPUC </td>
+              <td> IDGRUPO </td>
+              <td> PK_GRUPOS </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107329 </td>
+              <td> C </td>
+              <td> FUENTE2 </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107330 </td>
+              <td> C </td>
+              <td> FUENTE1 </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107331 </td>
+              <td> C </td>
+              <td> FUENTE0 </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107332 </td>
+              <td> C </td>
+              <td> FUENTE0 </td>
+              <td> ID_CARGUE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107333 </td>
+              <td> C </td>
+              <td> FUENTE0 </td>
+              <td> FECHA_CARGUE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107334 </td>
+              <td> C </td>
+              <td> FUENTE_M </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107335 </td>
+              <td> C </td>
+              <td> FUENTE_M </td>
+              <td> ID_CARGUE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107336 </td>
+              <td> C </td>
+              <td> FUENTE_M </td>
+              <td> FECHA_CARGUE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107337 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107338 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_CONF_CRUCE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107339 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_TIPINFOR_1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107340 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_ETIQUETA_1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107341 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> POS_INI_1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107342 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> LONGITUD_1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107343 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> VALOR_1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107344 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_TIPINFOR_2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107345 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_ETIQUETA_2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107346 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> POS_INI_2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107347 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> LONGITUD_2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107348 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> VALOR_2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107349 </td>
+              <td> C </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107350 </td>
+              <td> C </td>
+              <td> PRVSN_AVANCEAREA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107351 </td>
+              <td> C </td>
+              <td> TIP_INFORM </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107352 </td>
+              <td> C </td>
+              <td> TIP_INFORM </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107353 </td>
+              <td> C </td>
+              <td> CONCILIA_COL </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107354 </td>
+              <td> C </td>
+              <td> CONCILIA_COL </td>
+              <td> ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107355 </td>
+              <td> C </td>
+              <td> CONCILIA_COL </td>
+              <td> ID_CONCILIACION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107356 </td>
+              <td> C </td>
+              <td> CONCILIA_COL </td>
+              <td> ID_ETIQUETAF1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107357 </td>
+              <td> C </td>
+              <td> CONCILIA_COL </td>
+              <td> ID_ETIQUETAF2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107358 </td>
+              <td> C </td>
+              <td> CONCILIA_COL </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107359 </td>
+              <td> C </td>
+              <td> CLASRIESGO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107360 </td>
+              <td> C </td>
+              <td> CLASRIESGO </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107361 </td>
+              <td> C </td>
+              <td> CLASRIESGO </td>
+              <td> CLASRIESGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107362 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_V </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107363 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_V </td>
+              <td> ID_CONF_CONTABILIDADD </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107364 </td>
+              <td> C </td>
+              <td> TABLA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107365 </td>
+              <td> C </td>
+              <td> TABLA </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107366 </td>
+              <td> C </td>
+              <td> TABLA </td>
+              <td> NOMBRE_DB </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107367 </td>
+              <td> C </td>
+              <td> PARAMTRANS </td>
+              <td> ID_TRAN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107368 </td>
+              <td> C </td>
+              <td> PARAMETRO </td>
+              <td> ID_PARAM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107369 </td>
+              <td> C </td>
+              <td> PARAMETRO </td>
+              <td> IDCUENTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107370 </td>
+              <td> C </td>
+              <td> PARAMETRO </td>
+              <td> AJUSTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107371 </td>
+              <td> C </td>
+              <td> PARAMETRO </td>
+              <td> CIERRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107372 </td>
+              <td> C </td>
+              <td> GESTION_P </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107373 </td>
+              <td> C </td>
+              <td> PROGRAMADOR_TAREAS </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107374 </td>
+              <td> C </td>
+              <td> TIPO_CONTABILIDAD </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107375 </td>
+              <td> C </td>
+              <td> INTERFACE_CAMPO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107376 </td>
+              <td> C </td>
+              <td> INTERFACE_CAMPO </td>
+              <td> ID_INTERFACE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107377 </td>
+              <td> C </td>
+              <td> CAMPO_TABLA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107378 </td>
+              <td> C </td>
+              <td> CAMPO_TABLA </td>
+              <td> DESCRIPCION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107379 </td>
+              <td> C </td>
+              <td> CAMPO_TABLA </td>
+              <td> TIPO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107380 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107381 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ID_RELECTURA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107382 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ID_FILTROS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107383 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ID_ESTRUCTURA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107384 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107385 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA_D </td>
+              <td> ACTIVO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107386 </td>
+              <td> C </td>
+              <td> ESTRUCTURA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107387 </td>
+              <td> C </td>
+              <td> ESTRUCTURA </td>
+              <td> FUENTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107388 </td>
+              <td> C </td>
+              <td> ESTRUCTURA </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107389 </td>
+              <td> C </td>
+              <td> ESTRUCTURA </td>
+              <td> ID_TIP_INFO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107390 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107391 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> ID_CONF_GASTOS_GMF </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107392 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> FECHA_CREO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107393 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> USUARIO_CREO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107394 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> NOMBRE_USUARIO_CREO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107395 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107396 </td>
+              <td> C </td>
+              <td> GENERACION_ESTADO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107397 </td>
+              <td> C </td>
+              <td> GENERACION_ESTADO </td>
+              <td> ID_GENERACION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107398 </td>
+              <td> C </td>
+              <td> PROCESOS </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107399 </td>
+              <td> C </td>
+              <td> PROCESOS </td>
+              <td> DESCRIPCIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107400 </td>
+              <td> C </td>
+              <td> USR_GRUPOSCTA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107401 </td>
+              <td> C </td>
+              <td> USR_GRUPOSCTA </td>
+              <td> ID_USUARIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107402 </td>
+              <td> C </td>
+              <td> USR_GRUPOSCTA </td>
+              <td> ID_GRUPOSCTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107403 </td>
+              <td> C </td>
+              <td> FILTROS </td>
+              <td> ID_FILT </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107404 </td>
+              <td> C </td>
+              <td> FILTROS </td>
+              <td> ID_TIP_INF </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107405 </td>
+              <td> C </td>
+              <td> FILTROS </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107406 </td>
+              <td> C </td>
+              <td> FILTROS </td>
+              <td> FILTRO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107407 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107408 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> IDREL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107409 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107410 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> CODIGOPUC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107411 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> PORCENTAJE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107412 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> NATURALEZA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107413 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> TIPOCUENTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107414 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107415 </td>
+              <td> C </td>
+              <td> COMBIPUC </td>
+              <td> VALORESDISP </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107416 </td>
+              <td> C </td>
+              <td> DESTINA </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107417 </td>
+              <td> C </td>
+              <td> DESTINA </td>
+              <td> DESCRIPCIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107418 </td>
+              <td> C </td>
+              <td> FILTRO_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107419 </td>
+              <td> C </td>
+              <td> FILTRO_D </td>
+              <td> ID_FILTRO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107420 </td>
+              <td> C </td>
+              <td> FILTRO_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107421 </td>
+              <td> C </td>
+              <td> FILTRO_D </td>
+              <td> POS_INI </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107422 </td>
+              <td> C </td>
+              <td> FILTRO_D </td>
+              <td> LONGITUD </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107423 </td>
+              <td> C </td>
+              <td> FILTRO_D </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107424 </td>
+              <td> C </td>
+              <td> REPORTEH </td>
+              <td> ID_REPH </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107425 </td>
+              <td> C </td>
+              <td> REPORTEH </td>
+              <td> FECHA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107426 </td>
+              <td> C </td>
+              <td> REPORTEH </td>
+              <td> FECHASYS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107427 </td>
+              <td> C </td>
+              <td> REPORTEH </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107428 </td>
+              <td> C </td>
+              <td> REPORTEH </td>
+              <td> IDUSUARIOS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107429 </td>
+              <td> C </td>
+              <td> REPORTEH </td>
+              <td> IDESC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107430 </td>
+              <td> C </td>
+              <td> REPORTEH </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107431 </td>
+              <td> C </td>
+              <td> FILTRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107432 </td>
+              <td> C </td>
+              <td> FILTRO </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107433 </td>
+              <td> C </td>
+              <td> FILTRO </td>
+              <td> ID_USUARIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107434 </td>
+              <td> C </td>
+              <td> FILTRO </td>
+              <td> PUBLICO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107435 </td>
+              <td> C </td>
+              <td> FILTRO </td>
+              <td> PROCESO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107436 </td>
+              <td> C </td>
+              <td> FILTRO </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107437 </td>
+              <td> C </td>
+              <td> OPERACIO </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107438 </td>
+              <td> C </td>
+              <td> OPERACIO </td>
+              <td> COD_OPERAC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107439 </td>
+              <td> C </td>
+              <td> OPERACIO </td>
+              <td> DESCRIPCIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107440 </td>
+              <td> C </td>
+              <td> CONF_COLUMNA_CRUCEMANUAL </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107441 </td>
+              <td> C </td>
+              <td> TRANSACCION </td>
+              <td> ID_TRAN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107442 </td>
+              <td> C </td>
+              <td> TRANSACCION </td>
+              <td> FUENTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107443 </td>
+              <td> C </td>
+              <td> TRANSACCION </td>
+              <td> COD_TRAN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107444 </td>
+              <td> C </td>
+              <td> TRANSACCION </td>
+              <td> DESCRIP </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107445 </td>
+              <td> C </td>
+              <td> TRANSACCION </td>
+              <td> COD_ITEM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107446 </td>
+              <td> C </td>
+              <td> TRANSACCION </td>
+              <td> COD_ITEM2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107447 </td>
+              <td> C </td>
+              <td> CONF_AGRUP </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107448 </td>
+              <td> C </td>
+              <td> CONF_AGRUP </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107449 </td>
+              <td> C </td>
+              <td> CONF_AGRUP </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107450 </td>
+              <td> C </td>
+              <td> CONF_AGRUP </td>
+              <td> PERIODICIDAD </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107451 </td>
+              <td> C </td>
+              <td> GENERACION_CONTABILIDAD </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107452 </td>
+              <td> C </td>
+              <td> GENERACION_CONTABILIDAD </td>
+              <td> ID_GENERACION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107453 </td>
+              <td> C </td>
+              <td> GENERACION_CONTABILIDAD </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107454 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> IDCUENTAS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107455 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> CODIGOPUC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107456 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107457 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> NUM_CTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107458 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> COD_BAN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107459 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> CODEMPR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107460 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> N_MONEX </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107461 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> N_MONLI </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107462 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> NCOD_MONED </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107463 </td>
+              <td> C </td>
+              <td> CUENTAS </td>
+              <td> TIP_CTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107464 </td>
+              <td> C </td>
+              <td> FUENTE1_BACK2 </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107465 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN_ARCHIVO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107466 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN_ARCHIVO </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107467 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN_ARCHIVO </td>
+              <td> ID_CRG_RESUMEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107468 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN_ARCHIVO </td>
+              <td> CIFRADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107469 </td>
+              <td> C </td>
+              <td> UNIR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107470 </td>
+              <td> C </td>
+              <td> UNIR </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107471 </td>
+              <td> C </td>
+              <td> UNIR </td>
+              <td> ID_TIPINFO_BASE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107472 </td>
+              <td> C </td>
+              <td> UNIR </td>
+              <td> ID_TIPINFO_UNIR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107473 </td>
+              <td> C </td>
+              <td> BANCOS </td>
+              <td> COD_BAN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107474 </td>
+              <td> C </td>
+              <td> BANCOS </td>
+              <td> CAMPO2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107475 </td>
+              <td> C </td>
+              <td> BANCOS </td>
+              <td> NOM_BAN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107476 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107477 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> ID_CONFCONTABILIDAD </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107478 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> ID_PUC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107479 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> PORCENTAJE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107480 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> NATURALEZA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107481 </td>
+              <td> C </td>
+              <td> EXP_CAR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107482 </td>
+              <td> C </td>
+              <td> EXP_CAR </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107483 </td>
+              <td> C </td>
+              <td> EXP_CAR </td>
+              <td> ID_TIPINF_BASE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107484 </td>
+              <td> C </td>
+              <td> GENERACION_PARAMETRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107485 </td>
+              <td> C </td>
+              <td> GENERACION_PARAMETRO </td>
+              <td> ID_GENERACION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107486 </td>
+              <td> C </td>
+              <td> GENERACION_PARAMETRO </td>
+              <td> ID_PARAMETRO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107487 </td>
+              <td> C </td>
+              <td> MONEDAS </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107488 </td>
+              <td> C </td>
+              <td> MONEDAS </td>
+              <td> ABREVIAT </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107489 </td>
+              <td> C </td>
+              <td> MONEDAS </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107490 </td>
+              <td> C </td>
+              <td> GRUPOSCTA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107491 </td>
+              <td> C </td>
+              <td> GRUPOSCTA </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107492 </td>
+              <td> C </td>
+              <td> COMPLEMENTAR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107493 </td>
+              <td> C </td>
+              <td> COMPLEMENTAR </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107494 </td>
+              <td> C </td>
+              <td> COMPLEMENTAR </td>
+              <td> ID_TIPINFO_BASE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107495 </td>
+              <td> C </td>
+              <td> COMPLEMENTAR </td>
+              <td> ID_TIPINFO_COMPL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107496 </td>
+              <td> C </td>
+              <td> FLUJO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107497 </td>
+              <td> C </td>
+              <td> FLUJO </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107498 </td>
+              <td> C </td>
+              <td> FLUJO </td>
+              <td> FECHACORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107499 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107500 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107501 </td>
+              <td> C </td>
+              <td> CONF_RELECTURA </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107502 </td>
+              <td> C </td>
+              <td> UNIR_MAP </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107503 </td>
+              <td> C </td>
+              <td> UNIR_MAP </td>
+              <td> ID_ETIQUETA_BASE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107504 </td>
+              <td> C </td>
+              <td> UNIR_MAP </td>
+              <td> ID_ETIQUETA_UNIR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107505 </td>
+              <td> C </td>
+              <td> UNIR_MAP </td>
+              <td> ID_UNIR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107506 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107507 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107508 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> COD_OPERAC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107509 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> LIQUIDAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107510 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> PAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107511 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> CONCOND </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107512 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> CONDICION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107513 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107514 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> CONCEPTO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107515 </td>
+              <td> C </td>
+              <td> TRANSA </td>
+              <td> I_E </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107516 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107517 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD </td>
+              <td> ID_TIPO_CONTABILIDAD </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107518 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD </td>
+              <td> DESCRIPCION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107519 </td>
+              <td> C </td>
+              <td> ESTADO_EXPR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107520 </td>
+              <td> C </td>
+              <td> CONCILIACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107521 </td>
+              <td> C </td>
+              <td> CONCILIACION </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107522 </td>
+              <td> C </td>
+              <td> CONCILIACION </td>
+              <td> ID_TIP_INF1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107523 </td>
+              <td> C </td>
+              <td> CONCILIACION </td>
+              <td> ID_TIP_INF2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107524 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107525 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107526 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF_D </td>
+              <td> ID_CONF_GASTOS_GMF </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107527 </td>
+              <td> C </td>
+              <td> REGLAS_RIESGO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107528 </td>
+              <td> C </td>
+              <td> REGLAS_RIESGO </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107529 </td>
+              <td> C </td>
+              <td> REGLAS_RIESGO </td>
+              <td> IDCUENTAS1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107530 </td>
+              <td> C </td>
+              <td> REGLAS_RIESGO </td>
+              <td> IDCUENTAS2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107531 </td>
+              <td> C </td>
+              <td> REGLAS_RIESGO </td>
+              <td> ID_TIPINFORM_1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107532 </td>
+              <td> C </td>
+              <td> REGLAS_RIESGO </td>
+              <td> ID_TIPINFORM_2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107533 </td>
+              <td> C </td>
+              <td> MARCACION_USR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107534 </td>
+              <td> C </td>
+              <td> MARCACION_USR </td>
+              <td> ID_MARCACION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107535 </td>
+              <td> C </td>
+              <td> MARCACION_USR </td>
+              <td> ID_USUARIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107536 </td>
+              <td> C </td>
+              <td> MARCACION_USR </td>
+              <td> USUARIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107537 </td>
+              <td> C </td>
+              <td> GENERACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107538 </td>
+              <td> C </td>
+              <td> GENERACION </td>
+              <td> ID_INTERFACE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107539 </td>
+              <td> C </td>
+              <td> EXP_CAR_F </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107540 </td>
+              <td> C </td>
+              <td> EXP_CAR_F </td>
+              <td> ID_EXP_CAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107541 </td>
+              <td> C </td>
+              <td> EXP_CAR_F </td>
+              <td> ID_FILTROS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107542 </td>
+              <td> C </td>
+              <td> EXP_CAR_F </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107543 </td>
+              <td> C </td>
+              <td> FUENTE2_BACK </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107544 </td>
+              <td> C </td>
+              <td> FUENTE2_BACK </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107545 </td>
+              <td> C </td>
+              <td> FUENTE2_BACK </td>
+              <td> ID_REPORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107546 </td>
+              <td> C </td>
+              <td> EXP_CAR_C </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107547 </td>
+              <td> C </td>
+              <td> EXP_CAR_C </td>
+              <td> ID_EXP_CAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107548 </td>
+              <td> C </td>
+              <td> EXP_CAR_C </td>
+              <td> ID_COMPL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107549 </td>
+              <td> C </td>
+              <td> EXP_CAR_C </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107550 </td>
+              <td> C </td>
+              <td> MARCACION_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107551 </td>
+              <td> C </td>
+              <td> MARCACION_D </td>
+              <td> ID_MARCACION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107552 </td>
+              <td> C </td>
+              <td> MARCACION_D </td>
+              <td> ID_PARTIDA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107553 </td>
+              <td> C </td>
+              <td> MARCACION_D </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107554 </td>
+              <td> C </td>
+              <td> MARCACION_D </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107555 </td>
+              <td> C </td>
+              <td> ITEM_CON </td>
+              <td> COD_ITEM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107556 </td>
+              <td> C </td>
+              <td> PRVSN_TIPO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107557 </td>
+              <td> C </td>
+              <td> FUENTE2_BACK2 </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107558 </td>
+              <td> C </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107559 </td>
+              <td> C </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> INVERSION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107560 </td>
+              <td> C </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> COD_EMPRESA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107561 </td>
+              <td> C </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> NIT </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107562 </td>
+              <td> C </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> PROVISION_DISP </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107563 </td>
+              <td> C </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> CUENTASXCOBRAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107564 </td>
+              <td> C </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> CUENTASXPAGAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107565 </td>
+              <td> C </td>
+              <td> PRVSN_EMPRESA </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107566 </td>
+              <td> C </td>
+              <td> VALORES_ADICIONALES </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107567 </td>
+              <td> C </td>
+              <td> VALORES_ADICIONALES </td>
+              <td> ID_TABLA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107568 </td>
+              <td> C </td>
+              <td> VALORES_ADICIONALES </td>
+              <td> ID_CAMPO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107569 </td>
+              <td> C </td>
+              <td> PRVSN_SEGUIMIENTO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107570 </td>
+              <td> C </td>
+              <td> PRVSN_SEGUIMIENTO </td>
+              <td> DESCRIPCION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107571 </td>
+              <td> C </td>
+              <td> INTERFACE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107572 </td>
+              <td> C </td>
+              <td> INTERFACE </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107573 </td>
+              <td> C </td>
+              <td> PRVSN_TIPO_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107574 </td>
+              <td> C </td>
+              <td> PRVSN_TIPO_D </td>
+              <td> ID_PRVSN_TIPO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107575 </td>
+              <td> C </td>
+              <td> CONF_CRUCE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107576 </td>
+              <td> C </td>
+              <td> TRIAGMON </td>
+              <td> ID_TRIAG </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107577 </td>
+              <td> C </td>
+              <td> TRIAGMON </td>
+              <td> ID_MON_BASE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107578 </td>
+              <td> C </td>
+              <td> TRIAGMON </td>
+              <td> ID_MON_CONV </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107579 </td>
+              <td> C </td>
+              <td> INFORMESFC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107580 </td>
+              <td> C </td>
+              <td> INTERFACE_PARAMETRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107581 </td>
+              <td> C </td>
+              <td> INTERFACE_PARAMETRO </td>
+              <td> ID_INTERFACE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107582 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107583 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO_D </td>
+              <td> ID_GASTOS_GMF_PROCESO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107584 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO_D </td>
+              <td> ID_PARTIDA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107585 </td>
+              <td> C </td>
+              <td> GASTOS_GMF_PROCESO_D </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107586 </td>
+              <td> C </td>
+              <td> COLCMBPUC </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107587 </td>
+              <td> C </td>
+              <td> COLCMBPUC </td>
+              <td> DESCRIP </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107588 </td>
+              <td> C </td>
+              <td> FUENTE1_BACK </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107589 </td>
+              <td> C </td>
+              <td> FUENTE1_BACK </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107590 </td>
+              <td> C </td>
+              <td> FUENTE1_BACK </td>
+              <td> ID_REPORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107591 </td>
+              <td> C </td>
+              <td> PRVSN_PARTIDA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107592 </td>
+              <td> C </td>
+              <td> TIP_CTA </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107593 </td>
+              <td> C </td>
+              <td> TIP_CTA </td>
+              <td> DESCRIPCIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107594 </td>
+              <td> C </td>
+              <td> RELPUC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107595 </td>
+              <td> C </td>
+              <td> RELPUC </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107596 </td>
+              <td> C </td>
+              <td> PUC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107597 </td>
+              <td> C </td>
+              <td> PUC </td>
+              <td> CODIGOPUC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107598 </td>
+              <td> C </td>
+              <td> PUC </td>
+              <td> DESCRIPCIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107599 </td>
+              <td> C </td>
+              <td> PUC </td>
+              <td> CODIGOIFRS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107600 </td>
+              <td> C </td>
+              <td> GESTION_ARCHIVO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107601 </td>
+              <td> C </td>
+              <td> GESTION_ARCHIVO </td>
+              <td> ID_ARCHIVO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107602 </td>
+              <td> C </td>
+              <td> FRACCIONAR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107603 </td>
+              <td> C </td>
+              <td> FRACCIONAR </td>
+              <td> FECHACORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107604 </td>
+              <td> C </td>
+              <td> FRACCIONAR </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107605 </td>
+              <td> C </td>
+              <td> CAMP_COMPL </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107606 </td>
+              <td> C </td>
+              <td> CAMP_COMPL </td>
+              <td> ID_COMPLEMENTAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107607 </td>
+              <td> C </td>
+              <td> CAMP_COMPL </td>
+              <td> ID_ETIQUETA_BASE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107608 </td>
+              <td> C </td>
+              <td> CAMP_COMPL </td>
+              <td> ID_ETIQUETA_COMPL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107609 </td>
+              <td> C </td>
+              <td> GESTION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107610 </td>
+              <td> C </td>
+              <td> CRUCE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107611 </td>
+              <td> C </td>
+              <td> CRUCE </td>
+              <td> DESCRIPCION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107612 </td>
+              <td> C </td>
+              <td> CRUCE </td>
+              <td> FECHACORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107613 </td>
+              <td> C </td>
+              <td> CRG_VALOR_DEFECTO </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107614 </td>
+              <td> C </td>
+              <td> CRG_VALOR_DEFECTO </td>
+              <td> ID_CRG_DETALLE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107615 </td>
+              <td> C </td>
+              <td> CRG_VALOR_DEFECTO </td>
+              <td> VALOR_DEFECTO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107616 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107617 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_D </td>
+              <td> ID_GRUPO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107618 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_D </td>
+              <td> ID_ARCHIVO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107619 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_D </td>
+              <td> TIPO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107620 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107621 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> ID_REPORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107622 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107623 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> IDCUENTAS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107624 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107625 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> DEBITO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107626 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> CREDITO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107627 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> FECHA_CORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107628 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> FECHA_CONTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107629 </td>
+              <td> C </td>
+              <td> MOVTOS </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107630 </td>
+              <td> C </td>
+              <td> FRACCIONAR_BACK </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107631 </td>
+              <td> C </td>
+              <td> FRACCIONAR_BACK </td>
+              <td> FECHACORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107632 </td>
+              <td> C </td>
+              <td> FRACCIONAR_BACK </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107633 </td>
+              <td> C </td>
+              <td> USR_PROCESO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107634 </td>
+              <td> C </td>
+              <td> USR_PROCESO </td>
+              <td> ID_USUARIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107635 </td>
+              <td> C </td>
+              <td> USR_PROCESO </td>
+              <td> ID_PROCESO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107636 </td>
+              <td> C </td>
+              <td> EMPRESA </td>
+              <td> CODIGO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107637 </td>
+              <td> C </td>
+              <td> EMPRESA </td>
+              <td> ESTADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107638 </td>
+              <td> C </td>
+              <td> EMPRESA </td>
+              <td> NCOD_EQUIV </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107639 </td>
+              <td> C </td>
+              <td> EMPRESA </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107640 </td>
+              <td> C </td>
+              <td> PRVSN_CLASIFICACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107641 </td>
+              <td> C </td>
+              <td> PRVSN_CLASIFICACION </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107642 </td>
+              <td> C </td>
+              <td> PRVSN_CLASIFICACION </td>
+              <td> OBSERVACION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107643 </td>
+              <td> C </td>
+              <td> CRG_ARCHIVOS </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107644 </td>
+              <td> C </td>
+              <td> CRG_ARCHIVOS </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107645 </td>
+              <td> C </td>
+              <td> CRG_ARCHIVOS </td>
+              <td> ID_ESTRUCTURA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107646 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> ID_SALDOS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107647 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> IDCUENTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107648 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> FECHA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107649 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> SALORI_F1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107650 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> SALORI_F2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107651 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> SALDOFUEM1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107652 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> SALDOFUEM2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107653 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> SALDOFUEC1 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107654 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> SALDOFUEC2 </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107655 </td>
+              <td> C </td>
+              <td> SALDOS </td>
+              <td> IDESC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107656 </td>
+              <td> C </td>
+              <td> TABLA_MAESTRA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107657 </td>
+              <td> C </td>
+              <td> TABLA_MAESTRA </td>
+              <td> TABLA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107658 </td>
+              <td> C </td>
+              <td> TRANSACCIONES_GASTOS_IE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107659 </td>
+              <td> C </td>
+              <td> CONF_FRACC </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107660 </td>
+              <td> C </td>
+              <td> CONF_FRACC </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107661 </td>
+              <td> C </td>
+              <td> CONF_FRACC </td>
+              <td> ID_TIPINFORM </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107662 </td>
+              <td> C </td>
+              <td> CONF_FRACC </td>
+              <td> VALORMAX </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107663 </td>
+              <td> C </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107664 </td>
+              <td> C </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ID_CONF_AGRUP </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107665 </td>
+              <td> C </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107666 </td>
+              <td> C </td>
+              <td> CONF_AGRUP_D </td>
+              <td> POS_INI </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107667 </td>
+              <td> C </td>
+              <td> CONF_AGRUP_D </td>
+              <td> LONGITUD </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107668 </td>
+              <td> C </td>
+              <td> CONF_AGRUP_D </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107669 </td>
+              <td> C </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107670 </td>
+              <td> C </td>
+              <td> CONF_FRACC_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107671 </td>
+              <td> C </td>
+              <td> CONF_FRACC_D </td>
+              <td> ID_CONF_FRACC </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107672 </td>
+              <td> C </td>
+              <td> CONF_FRACC_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107673 </td>
+              <td> C </td>
+              <td> CONF_FRACC_D </td>
+              <td> POS_INI </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107674 </td>
+              <td> C </td>
+              <td> CONF_FRACC_D </td>
+              <td> LONGITUD </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107675 </td>
+              <td> C </td>
+              <td> CONF_FRACC_D </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107676 </td>
+              <td> C </td>
+              <td> CONF_FRACC_D </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107677 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_F </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107678 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_F </td>
+              <td> ID_CONFCONTABILIDAD </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107679 </td>
+              <td> C </td>
+              <td> CONF_CONTABILIDAD_F </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107680 </td>
+              <td> C </td>
+              <td> GRUPOSCTA_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107681 </td>
+              <td> C </td>
+              <td> GRUPOSCTA_D </td>
+              <td> ID_GRUPOSCTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107682 </td>
+              <td> C </td>
+              <td> GRUPOSCTA_D </td>
+              <td> IDCUENTAS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107683 </td>
+              <td> C </td>
+              <td> FILTRO_COMPL </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107684 </td>
+              <td> C </td>
+              <td> FILTRO_COMPL </td>
+              <td> ID_COMPLEMENTAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107685 </td>
+              <td> C </td>
+              <td> FILTRO_COMPL </td>
+              <td> ID_ETIQUETA_BASE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107686 </td>
+              <td> C </td>
+              <td> FILTRO_COMPL </td>
+              <td> ID_ETIQUETA_COMPL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107687 </td>
+              <td> C </td>
+              <td> GESTION_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107688 </td>
+              <td> C </td>
+              <td> GESTION_D </td>
+              <td> ID_GESTION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107689 </td>
+              <td> C </td>
+              <td> GESTION_D </td>
+              <td> ID_PROCESO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107690 </td>
+              <td> C </td>
+              <td> CRUCE_BACK </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107691 </td>
+              <td> C </td>
+              <td> CRUCE_BACK </td>
+              <td> DESCRIPCION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107692 </td>
+              <td> C </td>
+              <td> CRUCE_BACK </td>
+              <td> FECHACORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107693 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_E </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107694 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_E </td>
+              <td> ID_GRUPO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107695 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_E </td>
+              <td> FECHA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107696 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_E </td>
+              <td> LANZADOS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107697 </td>
+              <td> C </td>
+              <td> CRG_GRUPO_E </td>
+              <td> FINALIZADOS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107698 </td>
+              <td> C </td>
+              <td> FLUJO_MENSAJE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107699 </td>
+              <td> C </td>
+              <td> FLUJO_MENSAJE </td>
+              <td> ID_FLUJO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107700 </td>
+              <td> C </td>
+              <td> FLUJO_MENSAJE </td>
+              <td> RECHAZADO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107701 </td>
+              <td> C </td>
+              <td> CAMPO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107702 </td>
+              <td> C </td>
+              <td> CAMPO </td>
+              <td> ID_ESTRUCTURA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107703 </td>
+              <td> C </td>
+              <td> CAMPO </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107704 </td>
+              <td> C </td>
+              <td> ETIQUETA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107705 </td>
+              <td> C </td>
+              <td> ETIQUETA </td>
+              <td> COLUMNA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107706 </td>
+              <td> C </td>
+              <td> ETIQUETA </td>
+              <td> ETIQUETA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107707 </td>
+              <td> C </td>
+              <td> ETIQUETA </td>
+              <td> OBLIGATORIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107708 </td>
+              <td> C </td>
+              <td> ETIQUETA </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107709 </td>
+              <td> C </td>
+              <td> ETIQUETA </td>
+              <td> TIPO_DATO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107710 </td>
+              <td> C </td>
+              <td> ETIQUETA </td>
+              <td> ID_TIPINFO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107711 </td>
+              <td> C </td>
+              <td> MARCACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107712 </td>
+              <td> C </td>
+              <td> MARCACION </td>
+              <td> ID_PROCESO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107713 </td>
+              <td> C </td>
+              <td> MARCACION </td>
+              <td> OBSERVACION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107714 </td>
+              <td> C </td>
+              <td> MARCACION </td>
+              <td> TIPO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107715 </td>
+              <td> C </td>
+              <td> MARCACION </td>
+              <td> FECHA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107716 </td>
+              <td> C </td>
+              <td> MARCACION </td>
+              <td> ID_USUARIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107717 </td>
+              <td> C </td>
+              <td> MARCACION </td>
+              <td> USERNAME </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107718 </td>
+              <td> C </td>
+              <td> FUENTE0_BACK </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107719 </td>
+              <td> C </td>
+              <td> FUENTE0_BACK </td>
+              <td> ID_CARGUE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107720 </td>
+              <td> C </td>
+              <td> FUENTE0_BACK </td>
+              <td> FECHA_CARGUE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107721 </td>
+              <td> C </td>
+              <td> EXP_CAR_U </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107722 </td>
+              <td> C </td>
+              <td> EXP_CAR_U </td>
+              <td> ID_EXP_CAR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107723 </td>
+              <td> C </td>
+              <td> EXP_CAR_U </td>
+              <td> ID_UNIR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107724 </td>
+              <td> C </td>
+              <td> EXP_CAR_U </td>
+              <td> ORDEN </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107725 </td>
+              <td> C </td>
+              <td> CRG_GRUPO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107726 </td>
+              <td> C </td>
+              <td> CRG_GRUPO </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107727 </td>
+              <td> C </td>
+              <td> CRG_GRUPO </td>
+              <td> TIPO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107728 </td>
+              <td> C </td>
+              <td> MONVAL </td>
+              <td> ID_MONVAL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107729 </td>
+              <td> C </td>
+              <td> MONVAL </td>
+              <td> FECHATASA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107730 </td>
+              <td> C </td>
+              <td> MONVAL </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107731 </td>
+              <td> C </td>
+              <td> MONVAL </td>
+              <td> ID_MONEDA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107732 </td>
+              <td> C </td>
+              <td> PRVSN_CONTABILIZACION </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107733 </td>
+              <td> C </td>
+              <td> TRANSACCIONES_GASTOS_IE_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107734 </td>
+              <td> C </td>
+              <td> ALTURA_MORA </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107735 </td>
+              <td> C </td>
+              <td> ALTURA_MORA </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107736 </td>
+              <td> C </td>
+              <td> ALTURA_MORA </td>
+              <td> RANGO_INICIAL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107737 </td>
+              <td> C </td>
+              <td> ALTURA_MORA </td>
+              <td> RANGO_FINAL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107738 </td>
+              <td> C </td>
+              <td> ALTURA_MORA </td>
+              <td> PROCENTAJE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107739 </td>
+              <td> C </td>
+              <td> FUENTE_S </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107740 </td>
+              <td> C </td>
+              <td> FUENTE_S </td>
+              <td> ID_CARGUE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107741 </td>
+              <td> C </td>
+              <td> FUENTE_S </td>
+              <td> FECHA_CARGUE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107742 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107743 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107744 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> ID_GRUPOSCTA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107745 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> ID_TIP_INF </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107746 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> TIPO_MOVIMIENTO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107747 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> TIPO_SALIDA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107748 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> DESCRIPCION </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107749 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> EMPRESA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107750 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> ID_RUTA_DESCARGA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107751 </td>
+              <td> C </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> NOMBRE_ARCHIVO_SALIDA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107752 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107753 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN </td>
+              <td> FECHA_CORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107754 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN </td>
+              <td> FECHA_INICIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107755 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN </td>
+              <td> ID_ROL </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107756 </td>
+              <td> C </td>
+              <td> CRG_RESUMEN </td>
+              <td> ID_USUARIO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107757 </td>
+              <td> C </td>
+              <td> PRVSN_BASE </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107758 </td>
+              <td> C </td>
+              <td> PRVSN_BASE </td>
+              <td> ID_EMPRESA </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107759 </td>
+              <td> C </td>
+              <td> PRVSN_BASE </td>
+              <td> FECHACORTE </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107760 </td>
+              <td> C </td>
+              <td> PRVSN_BASE </td>
+              <td> PERIODO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107761 </td>
+              <td> C </td>
+              <td> AGRUPAR_BACK </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107762 </td>
+              <td> C </td>
+              <td> AGRUPAR </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107763 </td>
+              <td> C </td>
+              <td> CRG_ARCHIVOS_DET </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107764 </td>
+              <td> C </td>
+              <td> CRG_ARCHIVOS_DET </td>
+              <td> LINEA_INI_DATOS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107765 </td>
+              <td> C </td>
+              <td> CRG_ARCHIVOS_DET </td>
+              <td> NOMBRE_ARCHIVO </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107766 </td>
+              <td> C </td>
+              <td> CRG_ARCHIVOS_DET </td>
+              <td> ID_CRG_ARCHIVOS </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107767 </td>
+              <td> C </td>
+              <td> FUENTE1_TMP_PRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107768 </td>
+              <td> C </td>
+              <td> FUENTE2_TMP_PRO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107790 </td>
+              <td> P </td>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107831 </td>
+              <td> P </td>
+              <td> CONF_GASTOS_GMF_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107843 </td>
+              <td> P </td>
+              <td> PRVSN_TIPO </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107849 </td>
+              <td> P </td>
+              <td> PRVSN_TIPO_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107854 </td>
+              <td> P </td>
+              <td> GASTOS_GMF_PROCESO_D </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> SYS_C00107899 </td>
+              <td> P </td>
+              <td> CONF_GASTOS_GMF </td>
+              <td> ID </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> UK_CGR_GRUPO </td>
+              <td> U </td>
+              <td> CRG_GRUPO </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> UK_GRUPOD </td>
+              <td> U </td>
+              <td> CRG_GRUPO_D </td>
+              <td> ID_GRUPO </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> UK_GRUPOD </td>
+              <td> U </td>
+              <td> CRG_GRUPO_D </td>
+              <td> ID_ARCHIVO </td>
+              <td> (null) </td>
+              <td> 2 </td>
+            </tr>
+            <tr>
+              <td> UK_NOMBRE </td>
+              <td> U </td>
+              <td> CONF_AGRUP </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_AGRUP_D </td>
+              <td> U </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ID_CONF_AGRUP </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_AGRUP_D </td>
+              <td> U </td>
+              <td> CONF_AGRUP_D </td>
+              <td> ID_ETIQUETA </td>
+              <td> (null) </td>
+              <td> 2 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_AGRUP_D </td>
+              <td> U </td>
+              <td> CONF_AGRUP_D </td>
+              <td> POS_INI </td>
+              <td> (null) </td>
+              <td> 3 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_AGRUP_D </td>
+              <td> U </td>
+              <td> CONF_AGRUP_D </td>
+              <td> LONGITUD </td>
+              <td> (null) </td>
+              <td> 4 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_AGRUP_D </td>
+              <td> U </td>
+              <td> CONF_AGRUP_D </td>
+              <td> VALOR </td>
+              <td> (null) </td>
+              <td> 5 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_CONF_CRUCE </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_ETIQUETA_1 </td>
+              <td> (null) </td>
+              <td> 2 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> POS_INI_1 </td>
+              <td> (null) </td>
+              <td> 3 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> LONGITUD_1 </td>
+              <td> (null) </td>
+              <td> 4 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> VALOR_1 </td>
+              <td> (null) </td>
+              <td> 5 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> ID_ETIQUETA_2 </td>
+              <td> (null) </td>
+              <td> 6 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> POS_INI_2 </td>
+              <td> (null) </td>
+              <td> 7 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> LONGITUD_2 </td>
+              <td> (null) </td>
+              <td> 8 </td>
+            </tr>
+            <tr>
+              <td> UK_1CONF_CRUCE_D </td>
+              <td> U </td>
+              <td> CONF_CRUCE_D </td>
+              <td> VALOR_2 </td>
+              <td> (null) </td>
+              <td> 9 </td>
+            </tr>
+            <tr>
+              <td> UN_1CONF_FRACC </td>
+              <td> U </td>
+              <td> CONF_FRACC </td>
+              <td> NOMBRE </td>
+              <td> (null) </td>
+              <td> 1 </td>
+            </tr>
+            <tr>
+              <td> UN_1CONF_FRACC </td>
+              <td> U </td>
+              <td> CONF_FRACC </td>
+              <td> IDCUENTAS </td>
+              <td> (null) </td>
+              <td> 2 </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row-data">
+        <p id="cantRow"></p>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="valorFooter"></p>
+    </div>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>

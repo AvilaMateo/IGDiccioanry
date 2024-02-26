@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<link href="../hoja.css" rel="stylesheet" type="text/css" />
+
+<head>
+  <meta charset=utf-8 />
+  <title>Diccionario de datos - Informacion Gerencial</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="navbar">
+      <a href="../index.html"> <img src="../images/logo2.png" /></a>
+      <h2>DICCIONARIO DE DATOS - SUITE IG</h2>
+    </div>
+    <div class="contenido">
+      <div class="breadcrumb">
+        <a href="menu.html"><img src="../images/icon/volver.png" alt=""></a> |
+        <p>OPCIONES</p><img src="../images/icon/mayor.png" alt="" width="10">
+        <p>TABLAS</p>
+        <h3>IGEQUAL</h3>
+      </div>
+      <div class="data">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th>TABLA</th>
+              <th>DESCRIPCION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> AGRUPAR </td>
+              <td> En esta tabla se registran la configuración de los Agrupamientos. </td>
+            </tr>
+            <tr>
+              <td> AGRUPAR_BACK </td>
+              <td> En esta tabla se registran la configuración de los Agrupamientos. </td>
+            </tr>
+            <tr>
+              <td> AGRUPAR_TMP </td>
+              <td> En esta tabla se almacenan temporalmente de los procesos masivos </td>
+            </tr>
+            <tr>
+              <td> ALTURA_MORA </td>
+              <td> En esta tabla se registran las Alturas de mora </td>
+            </tr>
+            <tr>
+              <td> BANCOS </td>
+              <td> En esta tabla se registran los Bancos requeridos durante el proceso de conciliación. </td>
+            </tr>
+            <tr>
+              <td> CAMP_COMPL </td>
+              <td> En esta tabla se definen los campos a complementar a la fuente de conciliación.. </td>
+            </tr>
+            <tr>
+              <td> CAMPO </td>
+              <td> En esta tabla se define la estructura de los campos de la fuente de conciliación. </td>
+            </tr>
+            <tr>
+              <td> CAMPO_TABLA </td>
+              <td> En esta tabla se almacena el nombre de la tabla </td>
+            </tr>
+            <tr>
+              <td> CLASRIESGO </td>
+              <td> En esta tabla se registra la Configuración de clasificación de riesgo </td>
+            </tr>
+            <tr>
+              <td> COLCMBPUC </td>
+              <td> En esta tabla se define la configuración de las columnas del COMBIPUC. </td>
+            </tr>
+            <tr>
+              <td> COMBIPUC </td>
+              <td> En esta tabla se define la configuración de las Combinaciones de Cuentas por Familia </td>
+            </tr>
+            <tr>
+              <td> COMPLEMENTAR </td>
+              <td> En esta tabla se define el tipo de información base y el tipo de información a complementar. </td>
+            </tr>
+            <tr>
+              <td> CONCILIACION </td>
+              <td> En esta tabla se agrupan los resportes de conciliación </td>
+            </tr>
+            <tr>
+              <td> CONCILIA_COL </td>
+              <td> En esta tabla se agrupan los resportes de conciliación </td>
+            </tr>
+            <tr>
+              <td> CONF_AGRUP </td>
+              <td> En esta tabla se define la configuración del agrupamiento </td>
+            </tr>
+            <tr>
+              <td> CONF_AGRUP_D </td>
+              <td> En esta tabla se define la configuración del agrupamiento teniendo en cuenta campos adicionales para
+                el agrupamiento </td>
+            </tr>
+            <tr>
+              <td> CONF_COLUMNA_CRUCEMANUAL </td>
+              <td> En esta tabla se registra la Configuración de ls columnas para cruce manual </td>
+            </tr>
+            <tr>
+              <td> CONF_CONTABILIDAD </td>
+              <td> En esta tabla se registra la Configuración de la contabilidad </td>
+            </tr>
+            <tr>
+              <td> CONF_CONTABILIDAD_D </td>
+              <td> En esta tabla se almacena el detalle de la contabilidad </td>
+            </tr>
+            <tr>
+              <td> CONF_CONTABILIDAD_F </td>
+              <td> En esta tabla se registra el Proceso de contabilidad </td>
+            </tr>
+            <tr>
+              <td> CONF_CONTABILIDAD_V </td>
+              <td> En esta tabla se registra la Configuración de contabilidad </td>
+            </tr>
+            <tr>
+              <td> CONF_CRUCE </td>
+              <td> En esta tabla se define la configuración del cruce </td>
+            </tr>
+            <tr>
+              <td> CONF_CRUCE_D </td>
+              <td> En esta tabla se define la configuración del cruce teniendo en cuenta campos adicionales para el
+                cruce </td>
+            </tr>
+            <tr>
+              <td> CONF_FRACC </td>
+              <td> En esta tabla se define la configuración de los fraccionamientos sin autorizar </td>
+            </tr>
+            <tr>
+              <td> CONF_FRACC_D </td>
+              <td> En esta tabla se almacena el detalle del fraccionamiento </td>
+            </tr>
+            <tr>
+              <td> CONF_GASTOS_GMF </td>
+              <td> configuracion de Gastos GMF </td>
+            </tr>
+            <tr>
+              <td> CONF_GASTOS_GMF_D </td>
+              <td> configuracion de Gastos GMF Detalle </td>
+            </tr>
+            <tr>
+              <td> CONF_RELECTURA </td>
+              <td> En esta tabla se guarda configuración de relectura </td>
+            </tr>
+            <tr>
+              <td> CONF_RELECTURA_D </td>
+              <td> En esta tabla se guarda configuración de relectura detalle </td>
+            </tr>
+            <tr>
+              <td> CRG_ARCHIVOS </td>
+              <td> En esta tabla se define la estructura del archivo de cargue de la fuente de conciliación. </td>
+            </tr>
+            <tr>
+              <td> CRG_ARCHIVOS_DET </td>
+              <td> En esta tabla se define el detalle de la configuración de los archivos </td>
+            </tr>
+            <tr>
+              <td> CRG_GRUPO </td>
+              <td> En esta tabla se definen los grupos de cargue </td>
+            </tr>
+            <tr>
+              <td> CRG_GRUPO_D </td>
+              <td> En esta tabla se define el detalle de los grupos de cargue </td>
+            </tr>
+            <tr>
+              <td> CRG_GRUPO_E </td>
+              <td> En esta tabla se define el detalle de los grupos de cargue </td>
+            </tr>
+            <tr>
+              <td> CRG_RESUMEN </td>
+              <td> En esta tabla se almacena la información al detalle de los archivos de cargue ejecutados. </td>
+            </tr>
+            <tr>
+              <td> CRG_RESUMEN_ARCHIVO </td>
+              <td> En esta tabla se guarda el nombre de archivo de cargue </td>
+            </tr>
+            <tr>
+              <td> CRG_VALOR_DEFECTO </td>
+              <td> En esta tabla se define campos puntuales de la estructura del archivo de cargue de la fuente de
+                conciliación a buscar en un repositorio. </td>
+            </tr>
+            <tr>
+              <td> CRUCE </td>
+              <td> En esta tabla se definen los cruces que se realizaran en la conciliación </td>
+            </tr>
+            <tr>
+              <td> CRUCE_BACK </td>
+              <td> En esta tabla se definen los cruces que se realizaran en la conciliación </td>
+            </tr>
+            <tr>
+              <td> CUENTAS </td>
+              <td> En esta tabla se parametriza la información del producto conciliatorio </td>
+            </tr>
+            <tr>
+              <td> DESTINA </td>
+              <td> En esta tabla se parametriza la información del destinatario para un proceso de gestión de partidas
+              </td>
+            </tr>
+            <tr>
+              <td> EMPRESA </td>
+              <td> En esta tabla se clasifican las empresas o negocios las cuales posee un cliente </td>
+            </tr>
+            <tr>
+              <td> ESTADO_EXPR </td>
+              <td> En esta tabla se demuestra detallado el proceso de exportar </td>
+            </tr>
+            <tr>
+              <td> ESTRUCTURA </td>
+              <td> En esta tabla se almacena la configuración de los campos de exportar </td>
+            </tr>
+            <tr>
+              <td> ETIQUETA </td>
+              <td> En esta tabla se almacena la configuración de los campos de acuerdo con la fuente de conciliación
+              </td>
+            </tr>
+            <tr>
+              <td> EXP_CAR </td>
+              <td> En esta tabla se almacena el proceso de exportar </td>
+            </tr>
+            <tr>
+              <td> EXP_CAR_C </td>
+              <td> En esta tabla se almacena la configuración de los campos de exportar complementos </td>
+            </tr>
+            <tr>
+              <td> EXP_CAR_F </td>
+              <td> En esta tabla se almacena la configuración de los campos de exportar filtros </td>
+            </tr>
+            <tr>
+              <td> EXP_CAR_U </td>
+              <td> En esta tabla se almacena la configuración de los campos de exportar para unir </td>
+            </tr>
+            <tr>
+              <td> FECHAS_TMP </td>
+              <td> En esta tabla se almacenan temporalmente fechas para los procesos masivos </td>
+            </tr>
+            <tr>
+              <td> FILTRO </td>
+              <td> En esta tabla se configuran los filtros </td>
+            </tr>
+            <tr>
+              <td> FILTRO_COMPL </td>
+              <td> En esta tabla se configura el filtro de la etiqueta base y el nombre de la etiqueta complemento </td>
+            </tr>
+            <tr>
+              <td> FILTRO_D </td>
+              <td> En esta tabla se configura el detalle de los filtros </td>
+            </tr>
+            <tr>
+              <td> FILTROS </td>
+              <td> En esta tabla se almacena la configuración de las familias del COMBIPUC </td>
+            </tr>
+            <tr>
+              <td> FLUJO </td>
+              <td> En esta tabla se registra la Traza de flujos de aprobación </td>
+            </tr>
+            <tr>
+              <td> FLUJO_MENSAJE </td>
+              <td> En esta tabla se registran la Traza de mensajes en un flujo de aprobación </td>
+            </tr>
+            <tr>
+              <td> FRACCIONAR </td>
+              <td> En esta tabla se almacena el resultado del fraccionamiento </td>
+            </tr>
+            <tr>
+              <td> FRACCIONAR_BACK </td>
+              <td> En esta tabla se almacena el resultado del fraccionamiento </td>
+            </tr>
+            <tr>
+              <td> FUENTE_M </td>
+              <td> En esta tabla se almacenan los registros del cargue de acuerdo con el tipo de información para los
+                saldos </td>
+            </tr>
+            <tr>
+              <td> FUENTE_S </td>
+              <td> En esta tabla se almacenan los registros del cargue de acuerdo con el tipo de información para los
+                saldos. </td>
+            </tr>
+            <tr>
+              <td> FUENTE0 </td>
+              <td> En esta tabla se almacenan los registros del cargue de acuerdo con el tipo de información. </td>
+            </tr>
+            <tr>
+              <td> FUENTE0_BACK </td>
+              <td> En esta tabla se almacenan los registros del cargue de acuerdo con el tipo de información. </td>
+            </tr>
+            <tr>
+              <td> FUENTE1 </td>
+              <td> En esta tabla se almacenan los registros del proceso de exportar de la fuente conciliatoria 1 </td>
+            </tr>
+            <tr>
+              <td> FUENTE1_BACK </td>
+              <td> En esta tabla se almacenan los registros del proceso de CIERRE </td>
+            </tr>
+            <tr>
+              <td> FUENTE1_BACK2 </td>
+              <td> En esta tabla se almacenan la información de las partidas conciliatorias del cierre de FUENTE1 </td>
+            </tr>
+            <tr>
+              <td> FUENTE1_TMP </td>
+              <td> En esta tabla se almacena temporalmente el proceso de exportar antes de registrar en Fuente1 </td>
+            </tr>
+            <tr>
+              <td> FUENTE1_TMP_PRO </td>
+              <td> En esta tabla se registan los datos por sesión para procesos fuente conciliadora 1 </td>
+            </tr>
+            <tr>
+              <td> FUENTE2 </td>
+              <td> En esta tabla se almacenan los registros del proceso de exportar de la fuente conciliatoria 1 </td>
+            </tr>
+            <tr>
+              <td> FUENTE2_BACK </td>
+              <td> En esta tabla se almacena temporalmente el proceso de exportar antes de registrar en Fuente2 </td>
+            </tr>
+            <tr>
+              <td> FUENTE2_BACK2 </td>
+              <td> En esta tabla se almacenan la información de las partidas conciliatorias del cierre de FUENTE1 </td>
+            </tr>
+            <tr>
+              <td> FUENTE2_TMP </td>
+              <td> En esta tabla se almacena temporalmente el proceso de exportar antes de registrar en Fuente1 </td>
+            </tr>
+            <tr>
+              <td> FUENTE2_TMP_PRO </td>
+              <td> En esta tabla se registran los datos por sesion para procesos fuente conciliadora 1 </td>
+            </tr>
+            <tr>
+              <td> GASTOS_GMF_PROCESO </td>
+              <td> proceso de Gastos GMF </td>
+            </tr>
+            <tr>
+              <td> GASTOS_GMF_PROCESO_D </td>
+              <td> proceso de Gastos GMF </td>
+            </tr>
+            <tr>
+              <td> GENERACION </td>
+              <td> En esta tabla se registran cada una de las generaciones de interfaces realizadas </td>
+            </tr>
+            <tr>
+              <td> GENERACION_CONTABILIDAD </td>
+              <td> En esta tabla se registran los parámetros utilizados para generar las interfaces </td>
+            </tr>
+            <tr>
+              <td> GENERACION_ESTADO </td>
+              <td> En esta tabla se registran los parámetros utilizados para generar las interfaces </td>
+            </tr>
+            <tr>
+              <td> GENERACION_PARAMETRO </td>
+              <td> En esta tabla se registran los parámetros utilizados para generar las interfaces </td>
+            </tr>
+            <tr>
+              <td> GESTION </td>
+              <td> En esta tabla se almacena la configuración para la gestión de partidas </td>
+            </tr>
+            <tr>
+              <td> GESTION_ARCHIVO </td>
+              <td> En esta tabla se almacenan los archivos cargasdos en el proceso de gestión de partidas </td>
+            </tr>
+            <tr>
+              <td> GESTION_D </td>
+              <td> En esta tabla se almacena el detalle del proceso de gestión de partidas </td>
+            </tr>
+            <tr>
+              <td> GESTION_P </td>
+              <td> En esta tabla se almacena el detalle del proceso de gestión de partidas </td>
+            </tr>
+            <tr>
+              <td> GESTIONP_GESTION </td>
+              <td> En esta tabla se registran la Relación muchos a muchos entre gestiones de partidas </td>
+            </tr>
+            <tr>
+              <td> GESTION_TMP </td>
+              <td> En esta tabla se almacenan temporalmente de los procesos masivos </td>
+            </tr>
+            <tr>
+              <td> GRUPOSCTA </td>
+              <td> En esta tabla se crean los grupos de productos los cuales se usarán para la realización de procesos
+              </td>
+            </tr>
+            <tr>
+              <td> GRUPOSCTA_D </td>
+              <td> En esta tabla se define el detalle por grupo y por producto </td>
+            </tr>
+            <tr>
+              <td> IDS_TMP </td>
+              <td> En esta tabla se almacena temporalmente los diferentes procesos </td>
+            </tr>
+            <tr>
+              <td> INFORMESFC </td>
+              <td> En esta tabla se registran cada una de las generaciones del informeFC </td>
+            </tr>
+            <tr>
+              <td> INTERFACE </td>
+              <td> En esta tabla se registran las diferentes interfaces a generar </td>
+            </tr>
+            <tr>
+              <td> INTERFACE_CAMPO </td>
+              <td> En esta tabla se registran cada uno de los campos que componen una interface </td>
+            </tr>
+            <tr>
+              <td> INTERFACE_PARAMETRO </td>
+              <td> En esta tabla se registran los parametros requeridos psra la generacion de las interfaces </td>
+            </tr>
+            <tr>
+              <td> ITEM_CON </td>
+              <td> En esta tabla se almacena los Items de Conciliación. </td>
+            </tr>
+            <tr>
+              <td> MARCACION </td>
+              <td> En esta tabla se registran los datos de Marcación </td>
+            </tr>
+            <tr>
+              <td> MARCACION_D </td>
+              <td> En esta tabla se registra el detalle del proceso de Marcación </td>
+            </tr>
+            <tr>
+              <td> MARCACION_USR </td>
+              <td> En esta tabla se registra el usuario que participa en cada proceso de Marcación </td>
+            </tr>
+            <tr>
+              <td> MONEDAS </td>
+              <td> En esta tabla se registran las diferentes monedas requeridas durante el proceso de conciliación.
+              </td>
+            </tr>
+            <tr>
+              <td> MONVAL </td>
+              <td> En esta tabla se registran las monedas en cada fecha con su valor respectivo requeridas durante el
+                proceso de conciliación. </td>
+            </tr>
+            <tr>
+              <td> MOVTOS </td>
+              <td> En esta tabla se almacena el detalle de los movimientos contables. </td>
+            </tr>
+            <tr>
+              <td> OPERACIO </td>
+              <td> En esta tabla se registra la configuración de las operaciones en Contabilidad </td>
+            </tr>
+            <tr>
+              <td> PARAMETRO </td>
+              <td> En esta tabla se almacenan la configuración de la parametrización a tener en cuenta en el proceso de
+                Exportar para el producto conciliatorio. </td>
+            </tr>
+            <tr>
+              <td> PARAMTRANS </td>
+              <td> En esta tabla se almacenan otros parámetros generales de configuración para una cuenta o producto
+                conciliatorio </td>
+            </tr>
+            <tr>
+              <td> PARTIDA_TMP </td>
+              <td> En esta tabla se almacenan temporalmente de los procesos masivos </td>
+            </tr>
+            <tr>
+              <td> PROCESOS </td>
+              <td> En esta tabla se registran las Áreas para informe de gestión </td>
+            </tr>
+            <tr>
+              <td> PROGRAMADOR_TAREAS </td>
+              <td> En esta los procesos del programador de tarea </td>
+            </tr>
+            <tr>
+              <td> PRVSN_AVANCEAREA </td>
+              <td> En esta tabla se registran los Tipos de avances por área para provisiones </td>
+            </tr>
+            <tr>
+              <td> PRVSN_BASE </td>
+              <td> En esta tabla se almacena el control de las provisiones </td>
+            </tr>
+            <tr>
+              <td> PRVSN_CLASIFICACION </td>
+              <td> En esta tabla se registran la Clasificación de las provisiones </td>
+            </tr>
+            <tr>
+              <td> PRVSN_CONTABILIZACION </td>
+              <td> En esta tabla se almacenan el resultado del proceso de contabilización de provisionamiento </td>
+            </tr>
+            <tr>
+              <td> PRVSN_EMPRESA </td>
+              <td> En esta tabla se almacenan el resultado del proceso de contabilización de provisionamiento </td>
+            </tr>
+            <tr>
+              <td> PRVSN_PARTIDA </td>
+              <td> En esta tabla se almacenan las partidas de las conciliaciones </td>
+            </tr>
+            <tr>
+              <td> PRVSN_SEGUIMIENTO </td>
+              <td> En esta tabla se almacena seguimientos de las provisiones </td>
+            </tr>
+            <tr>
+              <td> PRVSN_TIPO </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> PRVSN_TIPO_D </td>
+              <td> (null) </td>
+            </tr>
+            <tr>
+              <td> PUC </td>
+              <td> En esta tabla se define la configuración de las cuentas del PUC </td>
+            </tr>
+            <tr>
+              <td> REGLAS_RIESGO </td>
+              <td> En esta tabla se registran la Reclasificación entre cuentas </td>
+            </tr>
+            <tr>
+              <td> RELPUC </td>
+              <td> En esta tabla se almacenan la relación del PUC </td>
+            </tr>
+            <tr>
+              <td> REPORTEH </td>
+              <td> En esta tabla se almacenan los históricos de los procesos de cargue ejecutados </td>
+            </tr>
+            <tr>
+              <td> SALDOS </td>
+              <td> En esta tabla se registran los saldos iniciales para realizar el proceso de conciliación y se
+                registran los saldos calculados de las fuentes de conciliación. </td>
+            </tr>
+            <tr>
+              <td> SALDOS_TMP </td>
+              <td> En esta tabla se almacena temporalmente de los procesos masivos </td>
+            </tr>
+            <tr>
+              <td> TABLA </td>
+              <td> En esta tabla se almacenan los nombres de las tablas a las que se adicionaran en la tabla CAMPO_TABLA
+              </td>
+            </tr>
+            <tr>
+              <td> TABLA_MAESTRA </td>
+              <td> En esta tabla se depositará la información de los archivos. </td>
+            </tr>
+            <tr>
+              <td> TIP_CTA </td>
+              <td> En esta tabla se registran los tipos de cuentas requeridos durante el proceso de conciliación. </td>
+            </tr>
+            <tr>
+              <td> TIP_INFORM </td>
+              <td> En esta tabla se almacena la configuración del tipo de información extracto libros a la fuente de
+                conciliación. </td>
+            </tr>
+            <tr>
+              <td> TIPO_CONTABILIDAD </td>
+              <td> En esta tabla se registran los tipos de contabilidad que se procesa </td>
+            </tr>
+            <tr>
+              <td> TRANSA </td>
+              <td> En esta tabla se almacena la configuración de la transacción </td>
+            </tr>
+            <tr>
+              <td> TRANSACCION </td>
+              <td> En esta tabla se almacena la configuración de todas las transacciones de las fuentes conciliatorias.
+              </td>
+            </tr>
+            <tr>
+              <td> TRANSACCIONES_GASTOS_IE </td>
+              <td> En esta tabla se registran las configuraciones de las transacciones </td>
+            </tr>
+            <tr>
+              <td> TRANSACCIONES_GASTOS_IE_D </td>
+              <td> En esta tabla se registran cada una de las transacciones asociadas a la configuracion </td>
+            </tr>
+            <tr>
+              <td> TRIAGMON </td>
+              <td> En esta tabla se configura la triangulación de la moneda en caso de ser moneda extranjera </td>
+            </tr>
+            <tr>
+              <td> UNIR </td>
+              <td> En esta tabla se almacena la configuración de tipos de información (Extractos, libros, etc.) que ya
+                se han cargado en el sistema y se requiere unir campos ubicados en fila y de esta forma completar
+                información requerida </td>
+            </tr>
+            <tr>
+              <td> UNIR_MAP </td>
+              <td> En esta tabla se configura la tabla de UNIR_MAP </td>
+            </tr>
+            <tr>
+              <td> USR_GRUPOSCTA </td>
+              <td> En esta tabla se almacenan los procesos asignados a una cuenta especifico </td>
+            </tr>
+            <tr>
+              <td> USR_PROCESO </td>
+              <td> En esta tabla se almacenan los procesos asignados a un usuario especifico </td>
+            </tr>
+            <tr>
+              <td> VALORES_ADICIONALES </td>
+              <td> En esta tabla se almacena los valores de la relación de la tabla (tabla ) y la tabla (CAMPO_TABLA)
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="row-data">
+        <p id="cantRow"></p>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="valorFooter"></p>
+    </div>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>
